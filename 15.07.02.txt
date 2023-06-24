@@ -1,10 +1,11 @@
 ####################################
 # 创建者：v2rayse.com
-# 客户端：Clash
-# 创建时间：25-06-2023 00:39:44
+# 客户端：Clash.Meta
+# 创建时间：24-06-2023 19:06:59
 # 使用模版：V2RaySE 默认模版
-# 节点数量：1
+# 节点数量：10
 ####################################
+# !!当前配置文件请使用基于 Clash.Meta 内核程序
 mixed-port: 7890
 allow-lan: true
 log-level: info
@@ -22,6 +23,15 @@ dns:
 
 proxies:
   - {"name":"Tavakoli Vip🇮🇷1","type":"vmess","server":"msifr.easytome.net","port":17497,"cipher":"auto","uuid":"3ab822e1-8f1e-4e8a-8517-6de45e57ab41","alterId":0,"tls":false,"skip-cert-verify":true,"network":"http"}
+  - {"name":"Tavakoli Vip🇩🇪2","type":"vless","server":"vsde2.pgafan.net","port":33622,"uuid":"f498014d-0135-4626-c259-c48d9b628a67","tls":false,"network":"ws","ws-opts":{"path":"/"}}
+  - {"name":"Tavakoli Vip🇬🇧3","type":"ssr","server":"nsuk2.imytvps.com","port":5000,"password":"+TuRB0V9N++","cipher":"dummy","obfs":"http_simple","protocol":"auth_aes128_md5"}
+  - {"name":"Tavakoli Vip🇩🇪4","type":"ssr","server":"nsde3.imytvps.com","port":5000,"password":"Jh+287UBAd@+","cipher":"dummy","obfs":"http_simple","protocol":"auth_aes128_md5"}
+  - {"name":"Tavakoli Vip🇷🇴5","type":"vless","server":"vsro.pgafan.net","port":35247,"uuid":"83a760ae-7640-4a64-bca3-e00ec178df44","tls":true,"network":"ws","ws-opts":{"path":"/"}}
+  - {"name":"Tavakoli Vip🇫🇮6","type":"vless","server":"msfi.easytome.net","port":35247,"uuid":"2b7390ae-767a-46da-9df9-0c88919e9b55","tls":true,"network":"ws","ws-opts":{"path":"/"}}
+  - {"name":"Tavakoli Vip🇺🇸7","type":"vless","server":"msus.easytome.net","port":35911,"uuid":"5621b36b-91ed-4a0e-92f9-8204a50cec7a","tls":false,"network":"ws","ws-opts":{"path":"/"}}
+  - {"name":"Tavakoli Vip🇺🇸8","type":"ssr","server":"nsus.irundns.net","port":5000,"password":"$$Turb0++VPN$$","cipher":"dummy","obfs":"http_post","protocol":"auth_aes128_md5"}
+  - {"name":"Tavakoli Vip🇺🇸9","type":"ssr","server":"nsus.imytvps.com","port":5000,"password":"$$Turb0++VPN$$","cipher":"dummy","obfs":"http_simple","protocol":"auth_aes128_md5"}
+  - {"name":"Tavakoli Vip🇫🇮10","type":"ssr","server":"nsfi.imytvps.com","port":443,"password":"+asd6a5s5df+","cipher":"aes-256-cfb","obfs":"http_post","protocol":"auth_aes128_md5"}
 proxy-groups:
   - name: 🚀 节点选择
     type: select
@@ -29,6 +39,15 @@ proxy-groups:
       - ♻️ 自动选择
       - DIRECT
       - Tavakoli Vip🇮🇷1
+      - Tavakoli Vip🇩🇪2
+      - Tavakoli Vip🇬🇧3
+      - Tavakoli Vip🇩🇪4
+      - Tavakoli Vip🇷🇴5
+      - Tavakoli Vip🇫🇮6
+      - Tavakoli Vip🇺🇸7
+      - Tavakoli Vip🇺🇸8
+      - Tavakoli Vip🇺🇸9
+      - Tavakoli Vip🇫🇮10
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
@@ -36,6 +55,15 @@ proxy-groups:
     tolerance: 50
     proxies:
       - Tavakoli Vip🇮🇷1
+      - Tavakoli Vip🇩🇪2
+      - Tavakoli Vip🇬🇧3
+      - Tavakoli Vip🇩🇪4
+      - Tavakoli Vip🇷🇴5
+      - Tavakoli Vip🇫🇮6
+      - Tavakoli Vip🇺🇸7
+      - Tavakoli Vip🇺🇸8
+      - Tavakoli Vip🇺🇸9
+      - Tavakoli Vip🇫🇮10
   - name: 🌍 国外媒体
     type: select
     proxies:
@@ -43,24 +71,60 @@ proxy-groups:
       - ♻️ 自动选择
       - 🎯 全球直连
       - Tavakoli Vip🇮🇷1
+      - Tavakoli Vip🇩🇪2
+      - Tavakoli Vip🇬🇧3
+      - Tavakoli Vip🇩🇪4
+      - Tavakoli Vip🇷🇴5
+      - Tavakoli Vip🇫🇮6
+      - Tavakoli Vip🇺🇸7
+      - Tavakoli Vip🇺🇸8
+      - Tavakoli Vip🇺🇸9
+      - Tavakoli Vip🇫🇮10
   - name: 📲 电报信息
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
       - Tavakoli Vip🇮🇷1
+      - Tavakoli Vip🇩🇪2
+      - Tavakoli Vip🇬🇧3
+      - Tavakoli Vip🇩🇪4
+      - Tavakoli Vip🇷🇴5
+      - Tavakoli Vip🇫🇮6
+      - Tavakoli Vip🇺🇸7
+      - Tavakoli Vip🇺🇸8
+      - Tavakoli Vip🇺🇸9
+      - Tavakoli Vip🇫🇮10
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
       - 🎯 全球直连
       - 🚀 节点选择
       - Tavakoli Vip🇮🇷1
+      - Tavakoli Vip🇩🇪2
+      - Tavakoli Vip🇬🇧3
+      - Tavakoli Vip🇩🇪4
+      - Tavakoli Vip🇷🇴5
+      - Tavakoli Vip🇫🇮6
+      - Tavakoli Vip🇺🇸7
+      - Tavakoli Vip🇺🇸8
+      - Tavakoli Vip🇺🇸9
+      - Tavakoli Vip🇫🇮10
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
       - Tavakoli Vip🇮🇷1
+      - Tavakoli Vip🇩🇪2
+      - Tavakoli Vip🇬🇧3
+      - Tavakoli Vip🇩🇪4
+      - Tavakoli Vip🇷🇴5
+      - Tavakoli Vip🇫🇮6
+      - Tavakoli Vip🇺🇸7
+      - Tavakoli Vip🇺🇸8
+      - Tavakoli Vip🇺🇸9
+      - Tavakoli Vip🇫🇮10
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -84,6 +148,15 @@ proxy-groups:
       - 🎯 全球直连
       - ♻️ 自动选择
       - Tavakoli Vip🇮🇷1
+      - Tavakoli Vip🇩🇪2
+      - Tavakoli Vip🇬🇧3
+      - Tavakoli Vip🇩🇪4
+      - Tavakoli Vip🇷🇴5
+      - Tavakoli Vip🇫🇮6
+      - Tavakoli Vip🇺🇸7
+      - Tavakoli Vip🇺🇸8
+      - Tavakoli Vip🇺🇸9
+      - Tavakoli Vip🇫🇮10
 
 rules:
 # 本地/局域网地址
@@ -91,6 +164,9 @@ rules:
 # ACL4SSR标志 如没有，代表不是用ACL4SSR规则
 # 本地/局域网地址
 # Router managed 路由器管理域名
+  - DOMAIN-SUFFIX,xnxx.com,DIRECT
+  - DOMAIN-SUFFIX,mci.ir,DIRECT
+  - GEOIP,IR,DIRECT
   - DOMAIN-SUFFIX,acl4.ssr,🎯 全球直连
   - DOMAIN-SUFFIX,ip6-localhost,🎯 全球直连
   - DOMAIN-SUFFIX,ip6-loopback,🎯 全球直连
