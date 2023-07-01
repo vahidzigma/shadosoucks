@@ -1,9 +1,9 @@
 ####################################
 # 创建者：v2rayse.com
 # 客户端：Clash.Meta
-# 创建时间：24-06-2023 19:06:59
+# 创建时间：01-07-2023 22:46:52
 # 使用模版：V2RaySE 默认模版
-# 节点数量：10
+# 节点数量：14
 ####################################
 # !!当前配置文件请使用基于 Clash.Meta 内核程序
 mixed-port: 7890
@@ -22,109 +22,137 @@ dns:
     - tls://dns.google:853
 
 proxies:
-  - {"name":"Tavakoli Vip🇮🇷1","type":"vmess","server":"msifr.easytome.net","port":17497,"cipher":"auto","uuid":"3ab822e1-8f1e-4e8a-8517-6de45e57ab41","alterId":0,"tls":false,"skip-cert-verify":true,"network":"http"}
-  - {"name":"Tavakoli Vip🇩🇪2","type":"vless","server":"vsde2.pgafan.net","port":33622,"uuid":"f498014d-0135-4626-c259-c48d9b628a67","tls":false,"network":"ws","ws-opts":{"path":"/"}}
-  - {"name":"Tavakoli Vip🇬🇧3","type":"ssr","server":"nsuk2.imytvps.com","port":5000,"password":"+TuRB0V9N++","cipher":"dummy","obfs":"http_simple","protocol":"auth_aes128_md5"}
-  - {"name":"Tavakoli Vip🇩🇪4","type":"ssr","server":"nsde3.imytvps.com","port":5000,"password":"Jh+287UBAd@+","cipher":"dummy","obfs":"http_simple","protocol":"auth_aes128_md5"}
-  - {"name":"Tavakoli Vip🇷🇴5","type":"vless","server":"vsro.pgafan.net","port":35247,"uuid":"83a760ae-7640-4a64-bca3-e00ec178df44","tls":true,"network":"ws","ws-opts":{"path":"/"}}
-  - {"name":"Tavakoli Vip🇫🇮6","type":"vless","server":"msfi.easytome.net","port":35247,"uuid":"2b7390ae-767a-46da-9df9-0c88919e9b55","tls":true,"network":"ws","ws-opts":{"path":"/"}}
-  - {"name":"Tavakoli Vip🇺🇸7","type":"vless","server":"msus.easytome.net","port":35911,"uuid":"5621b36b-91ed-4a0e-92f9-8204a50cec7a","tls":false,"network":"ws","ws-opts":{"path":"/"}}
-  - {"name":"Tavakoli Vip🇺🇸8","type":"ssr","server":"nsus.irundns.net","port":5000,"password":"$$Turb0++VPN$$","cipher":"dummy","obfs":"http_post","protocol":"auth_aes128_md5"}
-  - {"name":"Tavakoli Vip🇺🇸9","type":"ssr","server":"nsus.imytvps.com","port":5000,"password":"$$Turb0++VPN$$","cipher":"dummy","obfs":"http_simple","protocol":"auth_aes128_md5"}
-  - {"name":"Tavakoli Vip🇫🇮10","type":"ssr","server":"nsfi.imytvps.com","port":443,"password":"+asd6a5s5df+","cipher":"aes-256-cfb","obfs":"http_post","protocol":"auth_aes128_md5"}
+  - {"name":"🇺🇸♥️Tavakoli♥️1","type":"vless","server":"msus.easytome.net","port":35911,"uuid":"5621b36b-91ed-4a0e-92f9-8204a50cec7a","tls":false,"network":"ws","ws-opts":{"path":"/"}}
+  - {"name":"🇫🇮♥️Tavakoli♥️2","type":"vless","server":"msfi.easytome.net","port":35247,"uuid":"2b7390ae-767a-46da-9df9-0c88919e9b55","tls":true,"network":"ws","ws-opts":{"path":"/"}}
+  - {"name":"🇺🇸♥️Tavakoli♥️3","type":"ssr","server":"nsus.irundns.net","port":5000,"password":"$$Turb0++VPN$$","cipher":"dummy","obfs":"http_post","protocol":"auth_aes128_md5"}
+  - {"name":"🇷🇴♥️Tavakoli♥️4","type":"vless","server":"vsro.pgafan.net","port":35247,"uuid":"83a760ae-7640-4a64-bca3-e00ec178df44","tls":true,"network":"ws","ws-opts":{"path":"/"}}
+  - {"name":"🇩🇪♥️Tavakoli♥️5","type":"ssr","server":"nsde3.imytvps.com","port":5000,"password":"Jh+287UBAd@+","cipher":"dummy","obfs":"http_simple","protocol":"auth_aes128_md5"}
+  - {"name":"🇸🇬♥️Tavakoli♥️6","type":"vmess","server":"zigma1eewa.asiaedfugtrqoi.dopraxrocks.com","port":443,"cipher":"none","uuid":"de04add9-5c68-8bab-950c-08cd5320df18","alterId":0,"tls":true,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/vmess"}}
+  - {"name":"🇸🇬♥️Tavakoli♥️7","type":"vless","server":"zigma1eewa.asiaedfugtrqoi.dopraxrocks.com","port":443,"uuid":"de04add9-5c68-8bab-950c-08cd5320df18","tls":true,"network":"ws","ws-opts":{"path":"/vless"}}
+  - {"name":"🇺🇸♥️Tavakoli♥️8","type":"ssr","server":"nsus.imytvps.com","port":5000,"password":"$$Turb0++VPN$$","cipher":"dummy","obfs":"http_simple","protocol":"auth_aes128_md5"}
+  - {"name":"🇹🇷♥️Tavakoli♥️9","type":"ssr","server":"nstr2.imytvps.com","port":5000,"password":"JHs65%$hasd","cipher":"dummy","obfs":"http_simple","protocol":"auth_aes128_md5"}
+  - {"name":"🇬🇧♥️Tavakoli♥️10","type":"ssr","server":"nsuk2.imytvps.com","port":5000,"password":"+TuRB0V9N++","cipher":"dummy","obfs":"http_simple","protocol":"auth_aes128_md5"}
+  - {"name":"🇩🇪♥️Tavakoli♥️11","type":"vless","server":"vsde2.pgafan.net","port":33622,"uuid":"f498014d-0135-4626-c259-c48d9b628a67","tls":false,"network":"ws","ws-opts":{"path":"/"}}
+  - {"name":"🇫🇮♥️Tavakoli♥️12","type":"ssr","server":"nsfi.imytvps.com","port":443,"password":"+asd6a5s5df+","cipher":"aes-256-cfb","obfs":"http_post","protocol":"auth_aes128_md5"}
+  - {"name":"🇩🇪♥️Tavakoli♥️13","type":"vmess","server":"vsde2.pgafan.net","port":12089,"cipher":"auto","uuid":"AEB34382-7222-4BE0-0E05-2BDCDD89B80A","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/"}}
+  - {"name":"🇮🇷♥️Tavakoli♥️14","type":"vmess","server":"msifr.easytome.net","port":17497,"cipher":"auto","uuid":"3ab822e1-8f1e-4e8a-8517-6de45e57ab41","alterId":0,"tls":false,"skip-cert-verify":true,"network":"http"}
 proxy-groups:
   - name: 🚀 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - DIRECT
-      - Tavakoli Vip🇮🇷1
-      - Tavakoli Vip🇩🇪2
-      - Tavakoli Vip🇬🇧3
-      - Tavakoli Vip🇩🇪4
-      - Tavakoli Vip🇷🇴5
-      - Tavakoli Vip🇫🇮6
-      - Tavakoli Vip🇺🇸7
-      - Tavakoli Vip🇺🇸8
-      - Tavakoli Vip🇺🇸9
-      - Tavakoli Vip🇫🇮10
+      - 🇺🇸♥️Tavakoli♥️1
+      - 🇫🇮♥️Tavakoli♥️2
+      - 🇺🇸♥️Tavakoli♥️3
+      - 🇷🇴♥️Tavakoli♥️4
+      - 🇩🇪♥️Tavakoli♥️5
+      - 🇸🇬♥️Tavakoli♥️6
+      - 🇸🇬♥️Tavakoli♥️7
+      - 🇺🇸♥️Tavakoli♥️8
+      - 🇹🇷♥️Tavakoli♥️9
+      - 🇬🇧♥️Tavakoli♥️10
+      - 🇩🇪♥️Tavakoli♥️11
+      - 🇫🇮♥️Tavakoli♥️12
+      - 🇩🇪♥️Tavakoli♥️13
+      - 🇮🇷♥️Tavakoli♥️14
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     tolerance: 50
     proxies:
-      - Tavakoli Vip🇮🇷1
-      - Tavakoli Vip🇩🇪2
-      - Tavakoli Vip🇬🇧3
-      - Tavakoli Vip🇩🇪4
-      - Tavakoli Vip🇷🇴5
-      - Tavakoli Vip🇫🇮6
-      - Tavakoli Vip🇺🇸7
-      - Tavakoli Vip🇺🇸8
-      - Tavakoli Vip🇺🇸9
-      - Tavakoli Vip🇫🇮10
+      - 🇺🇸♥️Tavakoli♥️1
+      - 🇫🇮♥️Tavakoli♥️2
+      - 🇺🇸♥️Tavakoli♥️3
+      - 🇷🇴♥️Tavakoli♥️4
+      - 🇩🇪♥️Tavakoli♥️5
+      - 🇸🇬♥️Tavakoli♥️6
+      - 🇸🇬♥️Tavakoli♥️7
+      - 🇺🇸♥️Tavakoli♥️8
+      - 🇹🇷♥️Tavakoli♥️9
+      - 🇬🇧♥️Tavakoli♥️10
+      - 🇩🇪♥️Tavakoli♥️11
+      - 🇫🇮♥️Tavakoli♥️12
+      - 🇩🇪♥️Tavakoli♥️13
+      - 🇮🇷♥️Tavakoli♥️14
   - name: 🌍 国外媒体
     type: select
     proxies:
       - 🚀 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - Tavakoli Vip🇮🇷1
-      - Tavakoli Vip🇩🇪2
-      - Tavakoli Vip🇬🇧3
-      - Tavakoli Vip🇩🇪4
-      - Tavakoli Vip🇷🇴5
-      - Tavakoli Vip🇫🇮6
-      - Tavakoli Vip🇺🇸7
-      - Tavakoli Vip🇺🇸8
-      - Tavakoli Vip🇺🇸9
-      - Tavakoli Vip🇫🇮10
+      - 🇺🇸♥️Tavakoli♥️1
+      - 🇫🇮♥️Tavakoli♥️2
+      - 🇺🇸♥️Tavakoli♥️3
+      - 🇷🇴♥️Tavakoli♥️4
+      - 🇩🇪♥️Tavakoli♥️5
+      - 🇸🇬♥️Tavakoli♥️6
+      - 🇸🇬♥️Tavakoli♥️7
+      - 🇺🇸♥️Tavakoli♥️8
+      - 🇹🇷♥️Tavakoli♥️9
+      - 🇬🇧♥️Tavakoli♥️10
+      - 🇩🇪♥️Tavakoli♥️11
+      - 🇫🇮♥️Tavakoli♥️12
+      - 🇩🇪♥️Tavakoli♥️13
+      - 🇮🇷♥️Tavakoli♥️14
   - name: 📲 电报信息
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
-      - Tavakoli Vip🇮🇷1
-      - Tavakoli Vip🇩🇪2
-      - Tavakoli Vip🇬🇧3
-      - Tavakoli Vip🇩🇪4
-      - Tavakoli Vip🇷🇴5
-      - Tavakoli Vip🇫🇮6
-      - Tavakoli Vip🇺🇸7
-      - Tavakoli Vip🇺🇸8
-      - Tavakoli Vip🇺🇸9
-      - Tavakoli Vip🇫🇮10
+      - 🇺🇸♥️Tavakoli♥️1
+      - 🇫🇮♥️Tavakoli♥️2
+      - 🇺🇸♥️Tavakoli♥️3
+      - 🇷🇴♥️Tavakoli♥️4
+      - 🇩🇪♥️Tavakoli♥️5
+      - 🇸🇬♥️Tavakoli♥️6
+      - 🇸🇬♥️Tavakoli♥️7
+      - 🇺🇸♥️Tavakoli♥️8
+      - 🇹🇷♥️Tavakoli♥️9
+      - 🇬🇧♥️Tavakoli♥️10
+      - 🇩🇪♥️Tavakoli♥️11
+      - 🇫🇮♥️Tavakoli♥️12
+      - 🇩🇪♥️Tavakoli♥️13
+      - 🇮🇷♥️Tavakoli♥️14
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
       - 🎯 全球直连
       - 🚀 节点选择
-      - Tavakoli Vip🇮🇷1
-      - Tavakoli Vip🇩🇪2
-      - Tavakoli Vip🇬🇧3
-      - Tavakoli Vip🇩🇪4
-      - Tavakoli Vip🇷🇴5
-      - Tavakoli Vip🇫🇮6
-      - Tavakoli Vip🇺🇸7
-      - Tavakoli Vip🇺🇸8
-      - Tavakoli Vip🇺🇸9
-      - Tavakoli Vip🇫🇮10
+      - 🇺🇸♥️Tavakoli♥️1
+      - 🇫🇮♥️Tavakoli♥️2
+      - 🇺🇸♥️Tavakoli♥️3
+      - 🇷🇴♥️Tavakoli♥️4
+      - 🇩🇪♥️Tavakoli♥️5
+      - 🇸🇬♥️Tavakoli♥️6
+      - 🇸🇬♥️Tavakoli♥️7
+      - 🇺🇸♥️Tavakoli♥️8
+      - 🇹🇷♥️Tavakoli♥️9
+      - 🇬🇧♥️Tavakoli♥️10
+      - 🇩🇪♥️Tavakoli♥️11
+      - 🇫🇮♥️Tavakoli♥️12
+      - 🇩🇪♥️Tavakoli♥️13
+      - 🇮🇷♥️Tavakoli♥️14
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
-      - Tavakoli Vip🇮🇷1
-      - Tavakoli Vip🇩🇪2
-      - Tavakoli Vip🇬🇧3
-      - Tavakoli Vip🇩🇪4
-      - Tavakoli Vip🇷🇴5
-      - Tavakoli Vip🇫🇮6
-      - Tavakoli Vip🇺🇸7
-      - Tavakoli Vip🇺🇸8
-      - Tavakoli Vip🇺🇸9
-      - Tavakoli Vip🇫🇮10
+      - 🇺🇸♥️Tavakoli♥️1
+      - 🇫🇮♥️Tavakoli♥️2
+      - 🇺🇸♥️Tavakoli♥️3
+      - 🇷🇴♥️Tavakoli♥️4
+      - 🇩🇪♥️Tavakoli♥️5
+      - 🇸🇬♥️Tavakoli♥️6
+      - 🇸🇬♥️Tavakoli♥️7
+      - 🇺🇸♥️Tavakoli♥️8
+      - 🇹🇷♥️Tavakoli♥️9
+      - 🇬🇧♥️Tavakoli♥️10
+      - 🇩🇪♥️Tavakoli♥️11
+      - 🇫🇮♥️Tavakoli♥️12
+      - 🇩🇪♥️Tavakoli♥️13
+      - 🇮🇷♥️Tavakoli♥️14
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -147,16 +175,20 @@ proxy-groups:
       - 🚀 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - Tavakoli Vip🇮🇷1
-      - Tavakoli Vip🇩🇪2
-      - Tavakoli Vip🇬🇧3
-      - Tavakoli Vip🇩🇪4
-      - Tavakoli Vip🇷🇴5
-      - Tavakoli Vip🇫🇮6
-      - Tavakoli Vip🇺🇸7
-      - Tavakoli Vip🇺🇸8
-      - Tavakoli Vip🇺🇸9
-      - Tavakoli Vip🇫🇮10
+      - 🇺🇸♥️Tavakoli♥️1
+      - 🇫🇮♥️Tavakoli♥️2
+      - 🇺🇸♥️Tavakoli♥️3
+      - 🇷🇴♥️Tavakoli♥️4
+      - 🇩🇪♥️Tavakoli♥️5
+      - 🇸🇬♥️Tavakoli♥️6
+      - 🇸🇬♥️Tavakoli♥️7
+      - 🇺🇸♥️Tavakoli♥️8
+      - 🇹🇷♥️Tavakoli♥️9
+      - 🇬🇧♥️Tavakoli♥️10
+      - 🇩🇪♥️Tavakoli♥️11
+      - 🇫🇮♥️Tavakoli♥️12
+      - 🇩🇪♥️Tavakoli♥️13
+      - 🇮🇷♥️Tavakoli♥️14
 
 rules:
 # 本地/局域网地址
