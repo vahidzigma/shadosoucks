@@ -1,0 +1,286 @@
+####################################
+# 创建者：v2rayse.com
+# 客户端：Clash.Meta
+# 创建时间：04-07-2023 21:06:32
+# 使用模版：V2RaySE 默认模版
+# 节点数量：25
+####################################
+# !!当前配置文件请使用基于 Clash.Meta 内核程序
+mixed-port: 7890
+allow-lan: true
+log-level: info
+external-controller: 0.0.0.0:9090
+dns:
+  enabled: true
+  nameserver:
+    - 119.29.29.29
+    - 223.5.5.5
+  fallback:
+    - 8.8.8.8
+    - 8.8.4.4
+    - tls://1.0.0.1:853
+    - tls://dns.google:853
+
+proxies:
+  - {"name":"🇮🇷♥️Tavakoli jan♥️1","type":"vmess","server":"msifr.easytome.net","port":17497,"cipher":"auto","uuid":"3ab822e1-8f1e-4e8a-8517-6de45e57ab41","alterId":0,"tls":false,"skip-cert-verify":true,"network":"http"}
+  - {"name":"🇩🇪♥️Tavakoli jan♥️2","type":"ssr","server":"nsde3.imytvps.com","port":5000,"password":"Jh+287UBAd@+","cipher":"dummy","obfs":"http_simple","protocol":"auth_aes128_md5"}
+  - {"name":"🇹🇷♥️Tavakoli jan♥️3","type":"ssr","server":"nstr2.imytvps.com","port":5000,"password":"JHs65%$hasd","cipher":"dummy","obfs":"http_simple","protocol":"auth_aes128_md5"}
+  - {"name":"🇬🇧♥️Tavakoli jan♥️4","type":"ssr","server":"nsuk2.imytvps.com","port":5000,"password":"+TuRB0V9N++","cipher":"dummy","obfs":"http_simple","protocol":"auth_aes128_md5"}
+  - {"name":"🇩🇪♥️Tavakoli jan♥️5","type":"vless","server":"vsde2.pgafan.net","port":33622,"uuid":"f498014d-0135-4626-c259-c48d9b628a67","tls":false,"network":"ws","ws-opts":{"path":"/"}}
+  - {"name":"🇩🇪♥️Tavakoli jan♥️6","type":"vmess","server":"vsde2.pgafan.net","port":12089,"cipher":"auto","uuid":"AEB34382-7222-4BE0-0E05-2BDCDD89B80A","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/"}}
+  - {"name":"🇫🇮♥️Tavakoli jan♥️7","type":"vless","server":"cdn.speedtest.135181.haami13.online","port":443,"uuid":"7b1ef807-9f86-472c-995a-30839460ab09","tls":true}
+  - {"name":"🇫🇮♥️Tavakoli jan♥️8","type":"vless","server":"msfi.easytome.net","port":35247,"uuid":"2b7390ae-767a-46da-9df9-0c88919e9b55","tls":true,"network":"ws","ws-opts":{"path":"/"}}
+  - {"name":"🇫🇮♥️Tavakoli jan♥️9","type":"vless","server":"cdn.speedtest.135181.haami13.online","port":443,"uuid":"7b1ef807-9f86-472c-995a-30839460ab09","tls":true}
+  - {"name":"🇩🇪♥️Tavakoli jan♥️10","type":"vless","server":"162.55.36.73","port":443,"uuid":"7b1ef807-9f86-472c-995a-30839460ab09","tls":true}
+  - {"name":"🇩🇪♥️Tavakoli jan♥️11","type":"vless","server":"cdn.speedtest.second.haami13.online","port":443,"uuid":"7b1ef807-9f86-472c-995a-30839460ab09","tls":true}
+  - {"name":"🇩🇪♥️Tavakoli jan♥️12","type":"vless","server":"cdn.speedtest.second.haami13.online","port":443,"uuid":"7b1ef807-9f86-472c-995a-30839460ab09","tls":false}
+  - {"name":"🇷🇴♥️Tavakoli jan♥️13","type":"vless","server":"vsro.pgafan.net","port":35247,"uuid":"83a760ae-7640-4a64-bca3-e00ec178df44","tls":true,"network":"ws","ws-opts":{"path":"/"}}
+  - {"name":"🇫🇮♥️Tavakoli jan♥️14","type":"vless","server":"cdn.speedtest.First.haami13.online","port":443,"uuid":"7b1ef807-9f86-472c-995a-30839460ab09","tls":false}
+  - {"name":"🇫🇮♥️Tavakoli jan♥️15","type":"vless","server":"cdn.speedtest.First.haami13.online","port":443,"uuid":"7b1ef807-9f86-472c-995a-30839460ab09","tls":true}
+  - {"name":"🇩🇪♥️Tavakoli jan♥️16","type":"vless","server":"cdn.speedtest.third.haami13.online","port":443,"uuid":"7b1ef807-9f86-472c-995a-30839460ab09","tls":false}
+  - {"name":"🇫🇮♥️Tavakoli jan♥️17","type":"ssr","server":"nsfi.imytvps.com","port":443,"password":"+asd6a5s5df+","cipher":"aes-256-cfb","obfs":"http_post","protocol":"auth_aes128_md5"}
+  - {"name":"🇩🇪♥️Tavakoli jan♥️18","type":"vless","server":"162.55.36.73","port":443,"uuid":"7b1ef807-9f86-472c-995a-30839460ab09","tls":false}
+  - {"name":"🇫🇮♥️Tavakoli jan♥️19","type":"vless","server":"cdn.speedtest.135181.haami13.online","port":443,"uuid":"7b1ef807-9f86-472c-995a-30839460ab09","tls":true}
+  - {"name":"🇫🇮♥️Tavakoli jan♥️20","type":"vless","server":"cdn.speedtest.fourth.haami13.online","port":443,"uuid":"7b1ef807-9f86-472c-995a-30839460ab09","tls":false}
+  - {"name":"🇫🇮♥️Tavakoli jan♥️21","type":"vless","server":"cdn.speedtest.135181.haami13.online","port":443,"uuid":"7b1ef807-9f86-472c-995a-30839460ab09","tls":true}
+  - {"name":"🇺🇸♥️Tavakoli jan♥️22","type":"ssr","server":"nsus.imytvps.com","port":5000,"password":"$$Turb0++VPN$$","cipher":"dummy","obfs":"http_simple","protocol":"auth_aes128_md5"}
+  - {"name":"🇺🇸♥️Tavakoli jan♥️23","type":"ssr","server":"nsus.irundns.net","port":5000,"password":"$$Turb0++VPN$$","cipher":"dummy","obfs":"http_post","protocol":"auth_aes128_md5"}
+  - {"name":"🇺🇸♥️Tavakoli jan♥️24","type":"ssr","server":"nsus5.imytvps.com","port":5000,"password":"BVga$@jah+","cipher":"dummy","obfs":"http_simple","protocol":"auth_aes128_md5"}
+  - {"name":"🇸🇬♥️Tavakoli jan♥️25","type":"vless","server":"zigma1eewa.asiaedfugtrqoi.dopraxrocks.com","port":443,"uuid":"de04add9-5c68-8bab-950c-08cd5320df18","tls":true,"network":"ws","ws-opts":{"path":"/vless"}}
+proxy-groups:
+  - name: 🚀 节点选择
+    type: select
+    proxies:
+      - ♻️ 自动选择
+      - DIRECT
+      - 🇮🇷♥️Tavakoli jan♥️1
+      - 🇩🇪♥️Tavakoli jan♥️2
+      - 🇹🇷♥️Tavakoli jan♥️3
+      - 🇬🇧♥️Tavakoli jan♥️4
+      - 🇩🇪♥️Tavakoli jan♥️5
+      - 🇩🇪♥️Tavakoli jan♥️6
+      - 🇫🇮♥️Tavakoli jan♥️7
+      - 🇫🇮♥️Tavakoli jan♥️8
+      - 🇫🇮♥️Tavakoli jan♥️9
+      - 🇩🇪♥️Tavakoli jan♥️10
+      - 🇩🇪♥️Tavakoli jan♥️11
+      - 🇩🇪♥️Tavakoli jan♥️12
+      - 🇷🇴♥️Tavakoli jan♥️13
+      - 🇫🇮♥️Tavakoli jan♥️14
+      - 🇫🇮♥️Tavakoli jan♥️15
+      - 🇩🇪♥️Tavakoli jan♥️16
+      - 🇫🇮♥️Tavakoli jan♥️17
+      - 🇩🇪♥️Tavakoli jan♥️18
+      - 🇫🇮♥️Tavakoli jan♥️19
+      - 🇫🇮♥️Tavakoli jan♥️20
+      - 🇫🇮♥️Tavakoli jan♥️21
+      - 🇺🇸♥️Tavakoli jan♥️22
+      - 🇺🇸♥️Tavakoli jan♥️23
+      - 🇺🇸♥️Tavakoli jan♥️24
+      - 🇸🇬♥️Tavakoli jan♥️25
+  - name: ♻️ 自动选择
+    type: url-test
+    url: http://www.gstatic.com/generate_204
+    interval: 300
+    tolerance: 50
+    proxies:
+      - 🇮🇷♥️Tavakoli jan♥️1
+      - 🇩🇪♥️Tavakoli jan♥️2
+      - 🇹🇷♥️Tavakoli jan♥️3
+      - 🇬🇧♥️Tavakoli jan♥️4
+      - 🇩🇪♥️Tavakoli jan♥️5
+      - 🇩🇪♥️Tavakoli jan♥️6
+      - 🇫🇮♥️Tavakoli jan♥️7
+      - 🇫🇮♥️Tavakoli jan♥️8
+      - 🇫🇮♥️Tavakoli jan♥️9
+      - 🇩🇪♥️Tavakoli jan♥️10
+      - 🇩🇪♥️Tavakoli jan♥️11
+      - 🇩🇪♥️Tavakoli jan♥️12
+      - 🇷🇴♥️Tavakoli jan♥️13
+      - 🇫🇮♥️Tavakoli jan♥️14
+      - 🇫🇮♥️Tavakoli jan♥️15
+      - 🇩🇪♥️Tavakoli jan♥️16
+      - 🇫🇮♥️Tavakoli jan♥️17
+      - 🇩🇪♥️Tavakoli jan♥️18
+      - 🇫🇮♥️Tavakoli jan♥️19
+      - 🇫🇮♥️Tavakoli jan♥️20
+      - 🇫🇮♥️Tavakoli jan♥️21
+      - 🇺🇸♥️Tavakoli jan♥️22
+      - 🇺🇸♥️Tavakoli jan♥️23
+      - 🇺🇸♥️Tavakoli jan♥️24
+      - 🇸🇬♥️Tavakoli jan♥️25
+  - name: 🌍 国外媒体
+    type: select
+    proxies:
+      - 🚀 节点选择
+      - ♻️ 自动选择
+      - 🎯 全球直连
+      - 🇮🇷♥️Tavakoli jan♥️1
+      - 🇩🇪♥️Tavakoli jan♥️2
+      - 🇹🇷♥️Tavakoli jan♥️3
+      - 🇬🇧♥️Tavakoli jan♥️4
+      - 🇩🇪♥️Tavakoli jan♥️5
+      - 🇩🇪♥️Tavakoli jan♥️6
+      - 🇫🇮♥️Tavakoli jan♥️7
+      - 🇫🇮♥️Tavakoli jan♥️8
+      - 🇫🇮♥️Tavakoli jan♥️9
+      - 🇩🇪♥️Tavakoli jan♥️10
+      - 🇩🇪♥️Tavakoli jan♥️11
+      - 🇩🇪♥️Tavakoli jan♥️12
+      - 🇷🇴♥️Tavakoli jan♥️13
+      - 🇫🇮♥️Tavakoli jan♥️14
+      - 🇫🇮♥️Tavakoli jan♥️15
+      - 🇩🇪♥️Tavakoli jan♥️16
+      - 🇫🇮♥️Tavakoli jan♥️17
+      - 🇩🇪♥️Tavakoli jan♥️18
+      - 🇫🇮♥️Tavakoli jan♥️19
+      - 🇫🇮♥️Tavakoli jan♥️20
+      - 🇫🇮♥️Tavakoli jan♥️21
+      - 🇺🇸♥️Tavakoli jan♥️22
+      - 🇺🇸♥️Tavakoli jan♥️23
+      - 🇺🇸♥️Tavakoli jan♥️24
+      - 🇸🇬♥️Tavakoli jan♥️25
+  - name: 📲 电报信息
+    type: select
+    proxies:
+      - 🚀 节点选择
+      - 🎯 全球直连
+      - 🇮🇷♥️Tavakoli jan♥️1
+      - 🇩🇪♥️Tavakoli jan♥️2
+      - 🇹🇷♥️Tavakoli jan♥️3
+      - 🇬🇧♥️Tavakoli jan♥️4
+      - 🇩🇪♥️Tavakoli jan♥️5
+      - 🇩🇪♥️Tavakoli jan♥️6
+      - 🇫🇮♥️Tavakoli jan♥️7
+      - 🇫🇮♥️Tavakoli jan♥️8
+      - 🇫🇮♥️Tavakoli jan♥️9
+      - 🇩🇪♥️Tavakoli jan♥️10
+      - 🇩🇪♥️Tavakoli jan♥️11
+      - 🇩🇪♥️Tavakoli jan♥️12
+      - 🇷🇴♥️Tavakoli jan♥️13
+      - 🇫🇮♥️Tavakoli jan♥️14
+      - 🇫🇮♥️Tavakoli jan♥️15
+      - 🇩🇪♥️Tavakoli jan♥️16
+      - 🇫🇮♥️Tavakoli jan♥️17
+      - 🇩🇪♥️Tavakoli jan♥️18
+      - 🇫🇮♥️Tavakoli jan♥️19
+      - 🇫🇮♥️Tavakoli jan♥️20
+      - 🇫🇮♥️Tavakoli jan♥️21
+      - 🇺🇸♥️Tavakoli jan♥️22
+      - 🇺🇸♥️Tavakoli jan♥️23
+      - 🇺🇸♥️Tavakoli jan♥️24
+      - 🇸🇬♥️Tavakoli jan♥️25
+  - name: Ⓜ️ 微软服务
+    type: select
+    proxies:
+      - 🎯 全球直连
+      - 🚀 节点选择
+      - 🇮🇷♥️Tavakoli jan♥️1
+      - 🇩🇪♥️Tavakoli jan♥️2
+      - 🇹🇷♥️Tavakoli jan♥️3
+      - 🇬🇧♥️Tavakoli jan♥️4
+      - 🇩🇪♥️Tavakoli jan♥️5
+      - 🇩🇪♥️Tavakoli jan♥️6
+      - 🇫🇮♥️Tavakoli jan♥️7
+      - 🇫🇮♥️Tavakoli jan♥️8
+      - 🇫🇮♥️Tavakoli jan♥️9
+      - 🇩🇪♥️Tavakoli jan♥️10
+      - 🇩🇪♥️Tavakoli jan♥️11
+      - 🇩🇪♥️Tavakoli jan♥️12
+      - 🇷🇴♥️Tavakoli jan♥️13
+      - 🇫🇮♥️Tavakoli jan♥️14
+      - 🇫🇮♥️Tavakoli jan♥️15
+      - 🇩🇪♥️Tavakoli jan♥️16
+      - 🇫🇮♥️Tavakoli jan♥️17
+      - 🇩🇪♥️Tavakoli jan♥️18
+      - 🇫🇮♥️Tavakoli jan♥️19
+      - 🇫🇮♥️Tavakoli jan♥️20
+      - 🇫🇮♥️Tavakoli jan♥️21
+      - 🇺🇸♥️Tavakoli jan♥️22
+      - 🇺🇸♥️Tavakoli jan♥️23
+      - 🇺🇸♥️Tavakoli jan♥️24
+      - 🇸🇬♥️Tavakoli jan♥️25
+  - name: 🍎 苹果服务
+    type: select
+    proxies:
+      - 🚀 节点选择
+      - 🎯 全球直连
+      - 🇮🇷♥️Tavakoli jan♥️1
+      - 🇩🇪♥️Tavakoli jan♥️2
+      - 🇹🇷♥️Tavakoli jan♥️3
+      - 🇬🇧♥️Tavakoli jan♥️4
+      - 🇩🇪♥️Tavakoli jan♥️5
+      - 🇩🇪♥️Tavakoli jan♥️6
+      - 🇫🇮♥️Tavakoli jan♥️7
+      - 🇫🇮♥️Tavakoli jan♥️8
+      - 🇫🇮♥️Tavakoli jan♥️9
+      - 🇩🇪♥️Tavakoli jan♥️10
+      - 🇩🇪♥️Tavakoli jan♥️11
+      - 🇩🇪♥️Tavakoli jan♥️12
+      - 🇷🇴♥️Tavakoli jan♥️13
+      - 🇫🇮♥️Tavakoli jan♥️14
+      - 🇫🇮♥️Tavakoli jan♥️15
+      - 🇩🇪♥️Tavakoli jan♥️16
+      - 🇫🇮♥️Tavakoli jan♥️17
+      - 🇩🇪♥️Tavakoli jan♥️18
+      - 🇫🇮♥️Tavakoli jan♥️19
+      - 🇫🇮♥️Tavakoli jan♥️20
+      - 🇫🇮♥️Tavakoli jan♥️21
+      - 🇺🇸♥️Tavakoli jan♥️22
+      - 🇺🇸♥️Tavakoli jan♥️23
+      - 🇺🇸♥️Tavakoli jan♥️24
+      - 🇸🇬♥️Tavakoli jan♥️25
+  - name: 🎯 全球直连
+    type: select
+    proxies:
+      - DIRECT
+      - 🚀 节点选择
+      - ♻️ 自动选择
+  - name: 🛑 全球拦截
+    type: select
+    proxies:
+      - REJECT
+      - DIRECT
+  - name: 🍃 应用净化
+    type: select
+    proxies:
+      - REJECT
+      - DIRECT
+  - name: 🐟 漏网之鱼
+    type: select
+    proxies:
+      - 🚀 节点选择
+      - 🎯 全球直连
+      - ♻️ 自动选择
+      - 🇮🇷♥️Tavakoli jan♥️1
+      - 🇩🇪♥️Tavakoli jan♥️2
+      - 🇹🇷♥️Tavakoli jan♥️3
+      - 🇬🇧♥️Tavakoli jan♥️4
+      - 🇩🇪♥️Tavakoli jan♥️5
+      - 🇩🇪♥️Tavakoli jan♥️6
+      - 🇫🇮♥️Tavakoli jan♥️7
+      - 🇫🇮♥️Tavakoli jan♥️8
+      - 🇫🇮♥️Tavakoli jan♥️9
+      - 🇩🇪♥️Tavakoli jan♥️10
+      - 🇩🇪♥️Tavakoli jan♥️11
+      - 🇩🇪♥️Tavakoli jan♥️12
+      - 🇷🇴♥️Tavakoli jan♥️13
+      - 🇫🇮♥️Tavakoli jan♥️14
+      - 🇫🇮♥️Tavakoli jan♥️15
+      - 🇩🇪♥️Tavakoli jan♥️16
+      - 🇫🇮♥️Tavakoli jan♥️17
+      - 🇩🇪♥️Tavakoli jan♥️18
+      - 🇫🇮♥️Tavakoli jan♥️19
+      - 🇫🇮♥️Tavakoli jan♥️20
+      - 🇫🇮♥️Tavakoli jan♥️21
+      - 🇺🇸♥️Tavakoli jan♥️22
+      - 🇺🇸♥️Tavakoli jan♥️23
+      - 🇺🇸♥️Tavakoli jan♥️24
+      - 🇸🇬♥️Tavakoli jan♥️25
+
+rules:
+# 本地/局域网地址
+# 参考：https://en.wikipedia.org/wiki/Reserved_IP_addresses
+# ACL4SSR标志 如没有，代表不是用ACL4SSR规则
+# 本地/局域网地址
+# Router managed 路由器管理域名
