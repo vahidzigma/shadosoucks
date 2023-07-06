@@ -1,9 +1,9 @@
 ####################################
 # 创建者：v2rayse.com
 # 客户端：Clash.Meta
-# 创建时间：06-07-2023 09:24:10
+# 创建时间：06-07-2023 10:06:37
 # 使用模版：V2RaySE 默认模版
-# 节点数量：2
+# 节点数量：5
 ####################################
 # !!当前配置文件请使用基于 Clash.Meta 内核程序
 mixed-port: 7890
@@ -22,53 +22,74 @@ dns:
     - tls://dns.google:853
 
 proxies:
-  - {"name":"🇸🇬🚗Tavakoli🚗1","type":"vless","server":"zigma1eewa.asiaedfugtrqoi.dopraxrocks.com","port":443,"uuid":"de04add9-5c68-8bab-950c-08cd5320df18","tls":true,"network":"ws","ws-opts":{"path":"/vless"}}
-  - {"name":"🇸🇬🚗Tavakoli🚗2","type":"vmess","server":"zigma1eewa.asiaedfugtrqoi.dopraxrocks.com","port":443,"cipher":"none","uuid":"de04add9-5c68-8bab-950c-08cd5320df18","alterId":0,"tls":true,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/vmess"}}
+  - {"name":"🇮🇷🏎Tavakoli🏎1","type":"vmess","server":"mside3.easytome.net","port":24453,"cipher":"auto","uuid":"d3468ca0-9442-499b-f64f-fdde57c72d83","alterId":0,"tls":false,"skip-cert-verify":true,"network":"http"}
+  - {"name":"🇮🇷🏎Tavakoli🏎2","type":"vmess","server":"msifr.easytome.net","port":54017,"cipher":"auto","uuid":"8d67887e-8ed7-48e1-c16b-2ec913dc36db","alterId":0,"tls":false,"skip-cert-verify":true,"network":"http"}
+  - {"name":"🇮🇷🏎Tavakoli🏎3","type":"vmess","server":"mside2.easytome.net","port":17913,"cipher":"auto","uuid":"240e2f96-0fb0-4e7b-ad18-edb86bfea5aa","alterId":0,"tls":false,"skip-cert-verify":true,"network":"http"}
+  - {"name":"🇸🇬🏎Tavakoli🏎4","type":"vmess","server":"zigma1eewa.asiaedfugtrqoi.dopraxrocks.com","port":443,"cipher":"none","uuid":"de04add9-5c68-8bab-950c-08cd5320df18","alterId":0,"tls":true,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/vmess"}}
+  - {"name":"🇸🇬🏎Tavakoli🏎5","type":"vless","server":"zigma1eewa.asiaedfugtrqoi.dopraxrocks.com","port":443,"uuid":"de04add9-5c68-8bab-950c-08cd5320df18","tls":true,"network":"ws","ws-opts":{"path":"/vless"}}
 proxy-groups:
   - name: 🚀 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - DIRECT
-      - 🇸🇬🚗Tavakoli🚗1
-      - 🇸🇬🚗Tavakoli🚗2
+      - 🇮🇷🏎Tavakoli🏎1
+      - 🇮🇷🏎Tavakoli🏎2
+      - 🇮🇷🏎Tavakoli🏎3
+      - 🇸🇬🏎Tavakoli🏎4
+      - 🇸🇬🏎Tavakoli🏎5
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     tolerance: 50
     proxies:
-      - 🇸🇬🚗Tavakoli🚗1
-      - 🇸🇬🚗Tavakoli🚗2
+      - 🇮🇷🏎Tavakoli🏎1
+      - 🇮🇷🏎Tavakoli🏎2
+      - 🇮🇷🏎Tavakoli🏎3
+      - 🇸🇬🏎Tavakoli🏎4
+      - 🇸🇬🏎Tavakoli🏎5
   - name: 🌍 国外媒体
     type: select
     proxies:
       - 🚀 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 🇸🇬🚗Tavakoli🚗1
-      - 🇸🇬🚗Tavakoli🚗2
+      - 🇮🇷🏎Tavakoli🏎1
+      - 🇮🇷🏎Tavakoli🏎2
+      - 🇮🇷🏎Tavakoli🏎3
+      - 🇸🇬🏎Tavakoli🏎4
+      - 🇸🇬🏎Tavakoli🏎5
   - name: 📲 电报信息
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
-      - 🇸🇬🚗Tavakoli🚗1
-      - 🇸🇬🚗Tavakoli🚗2
+      - 🇮🇷🏎Tavakoli🏎1
+      - 🇮🇷🏎Tavakoli🏎2
+      - 🇮🇷🏎Tavakoli🏎3
+      - 🇸🇬🏎Tavakoli🏎4
+      - 🇸🇬🏎Tavakoli🏎5
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
       - 🎯 全球直连
       - 🚀 节点选择
-      - 🇸🇬🚗Tavakoli🚗1
-      - 🇸🇬🚗Tavakoli🚗2
+      - 🇮🇷🏎Tavakoli🏎1
+      - 🇮🇷🏎Tavakoli🏎2
+      - 🇮🇷🏎Tavakoli🏎3
+      - 🇸🇬🏎Tavakoli🏎4
+      - 🇸🇬🏎Tavakoli🏎5
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
-      - 🇸🇬🚗Tavakoli🚗1
-      - 🇸🇬🚗Tavakoli🚗2
+      - 🇮🇷🏎Tavakoli🏎1
+      - 🇮🇷🏎Tavakoli🏎2
+      - 🇮🇷🏎Tavakoli🏎3
+      - 🇸🇬🏎Tavakoli🏎4
+      - 🇸🇬🏎Tavakoli🏎5
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -91,8 +112,11 @@ proxy-groups:
       - 🚀 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 🇸🇬🚗Tavakoli🚗1
-      - 🇸🇬🚗Tavakoli🚗2
+      - 🇮🇷🏎Tavakoli🏎1
+      - 🇮🇷🏎Tavakoli🏎2
+      - 🇮🇷🏎Tavakoli🏎3
+      - 🇸🇬🏎Tavakoli🏎4
+      - 🇸🇬🏎Tavakoli🏎5
 
 rules:
 # 本地/局域网地址
