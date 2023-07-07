@@ -1,51 +1,5 @@
-
-port: 7890
-socks-port: 7891
-redir-port: 7892
-mixed-port: 7893
-mode: rule
-log-level: silent
-allow-lan: true
-external-controller: 0.0.0.0:9090
-bind-address: "*"
-ipv6: false
-dns:
-  enable: true
-  ipv6: false
-  enhanced-mode: redir-host
-  listen: 0.0.0.0:7894
-  fallback-filter:
-    geoip: false
-    ipcidr:
-    - 240.0.0.0/4
-  nameserver:
-    - https://puredns.org/dns-query
-    - tls://puredns.org:853
-  fallback:
-    - tcp://108.137.44.39
-    - tcp://108.137.44.9
-    - 108.137.44.39
-    - 108.137.44.9
-tun:
-  enable: true
-  stack: system 
-  macOS-auto-route: true
-  macOS-auto-detect-interface: true
-  dns-hijack:
-    - tcp://108.137.44.39:53
-experimental:
-  interface-name: en0
-
 proxies:
-  - {name: vmess, server: mside3.easytome.net, port: 24453, type: vmess, uuid: d3468ca0-9442-499b-f64f-fdde57c72d83, sni: divarcdn.com, alterId: 0, cipher: auto, tls: , skip-cert-verify: true, udp: true, network: tcp, ws-opts: {path: /, headers: {Host: divarcdn.com}}}
+  - {"type":"vmess","server":"mside3.easytome.net","port":"24453","uuid":"d3468ca0-9442-499b-f64f-fdde57c72d83","alterId":"0","cipher":"auto","network":"http","tls":false,"http-opts":{"path":["/"],"headers":{"Host":"divarcdn.com"}},"name":"vmess_0"}
 
-proxy-groups:
-  - name: sshkit-generator
-    type: url-test
-    url: 'http://www.gstatic.com/generate_204'
-    interval: 300
-    proxies:
-      - vmess
-
-rules:
- - MATCH,sshkit-generator
+proxies-names:
+  - vmess_0
