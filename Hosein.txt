@@ -1,9 +1,9 @@
 ####################################
 # 创建者：v2rayse.com
 # 客户端：Clash.Meta
-# 创建时间：06-07-2023 15:48:48
+# 创建时间：07-07-2023 11:36:15
 # 使用模版：V2RaySE 默认模版
-# 节点数量：7
+# 节点数量：8
 ####################################
 # !!当前配置文件请使用基于 Clash.Meta 内核程序
 mixed-port: 7890
@@ -22,88 +22,95 @@ dns:
     - tls://dns.google:853
 
 proxies:
-  - {"name":"🇮🇷💯Engineer Karimi💯1","type":"vmess","server":"mside3.easytome.net","port":24453,"cipher":"auto","uuid":"d3468ca0-9442-499b-f64f-fdde57c72d83","alterId":0,"tls":false,"skip-cert-verify":true,"network":"http"}
-  - {"name":"🇮🇷💯Engineer Karimi💯2","type":"vmess","server":"mside2.easytome.net","port":17913,"cipher":"auto","uuid":"240e2f96-0fb0-4e7b-ad18-edb86bfea5aa","alterId":0,"tls":false,"skip-cert-verify":true,"network":"http"}
-  - {"name":"🇮🇷💯Engineer Karimi💯3","type":"vmess","server":"msifr.easytome.net","port":54017,"cipher":"auto","uuid":"8d67887e-8ed7-48e1-c16b-2ec913dc36db","alterId":0,"tls":false,"skip-cert-verify":true,"network":"http"}
-  - {"name":"🇩🇪💯Engineer Karimi💯4","type":"vless","server":"zigmauo6u.kfirjgyswf.dopraxrocks.com","port":443,"uuid":"de04add9-5c68-8bab-950c-08cd5320df18","tls":true,"network":"ws","ws-opts":{"path":"/vless"}}
-  - {"name":"🇩🇪💯Engineer Karimi💯5","type":"vmess","server":"zigmauo6u.kfirjgyswf.dopraxrocks.com","port":443,"cipher":"none","uuid":"de04add9-5c68-8bab-950c-08cd5320df18","alterId":0,"tls":true,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/vmess"}}
-  - {"name":"🇸🇬💯Engineer Karimi💯6","type":"vmess","server":"zigma1eewa.asiaedfugtrqoi.dopraxrocks.com","port":443,"cipher":"none","uuid":"de04add9-5c68-8bab-950c-08cd5320df18","alterId":0,"tls":true,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/vmess"}}
-  - {"name":"🇸🇬💯Engineer Karimi💯7","type":"vless","server":"zigma1eewa.asiaedfugtrqoi.dopraxrocks.com","port":443,"uuid":"de04add9-5c68-8bab-950c-08cd5320df18","tls":true,"network":"ws","ws-opts":{"path":"/vless"}}
+  - {"name":"🇮🇷🚑mr.karimi🚑1","type":"vmess","server":"msifr.easytome.net","port":54017,"cipher":"auto","uuid":"8d67887e-8ed7-48e1-c16b-2ec913dc36db","alterId":0,"tls":false,"skip-cert-verify":true,"network":"http"}
+  - {"name":"🇮🇷🚑mr.karimi🚑2","type":"vmess","server":"mside2.easytome.net","port":17913,"cipher":"auto","uuid":"240e2f96-0fb0-4e7b-ad18-edb86bfea5aa","alterId":0,"tls":false,"skip-cert-verify":true,"network":"http"}
+  - {"name":"🇫🇮🚑mr.karimi🚑3","type":"vless","server":"msfi.easytome.net","port":35247,"uuid":"2b7390ae-767a-46da-9df9-0c88919e9b55","tls":true,"network":"ws","ws-opts":{"path":"/"}}
+  - {"name":"🇷🇴🚑mr.karimi🚑4","type":"vless","server":"vsro.pgafan.net","port":35247,"uuid":"83a760ae-7640-4a64-bca3-e00ec178df44","tls":true,"network":"ws","ws-opts":{"path":"/"}}
+  - {"name":"🇺🇸🚑mr.karimi🚑5","type":"vless","server":"msus.easytome.net","port":35911,"uuid":"5621b36b-91ed-4a0e-92f9-8204a50cec7a","tls":false,"network":"ws","ws-opts":{"path":"/"}}
+  - {"name":"🇸🇬🚑mr.karimi🚑6","type":"vmess","server":"zigma1eewa.asiaedfugtrqoi.dopraxrocks.com","port":443,"cipher":"none","uuid":"de04add9-5c68-8bab-950c-08cd5320df18","alterId":0,"tls":true,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/vmess"}}
+  - {"name":"🇸🇬🚑mr.karimi🚑7","type":"vless","server":"zigma1eewa.asiaedfugtrqoi.dopraxrocks.com","port":443,"uuid":"de04add9-5c68-8bab-950c-08cd5320df18","tls":true,"network":"ws","ws-opts":{"path":"/vless"}}
+  - {"name":"🇮🇷🚑mr.karimi🚑8","type":"vmess","server":"mside3.easytome.net","port":24453,"cipher":"auto","uuid":"d3468ca0-9442-499b-f64f-fdde57c72d83","alterId":0,"tls":false,"skip-cert-verify":true,"network":"http"}
 proxy-groups:
   - name: 🚀 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - DIRECT
-      - 🇮🇷💯Engineer Karimi💯1
-      - 🇮🇷💯Engineer Karimi💯2
-      - 🇮🇷💯Engineer Karimi💯3
-      - 🇩🇪💯Engineer Karimi💯4
-      - 🇩🇪💯Engineer Karimi💯5
-      - 🇸🇬💯Engineer Karimi💯6
-      - 🇸🇬💯Engineer Karimi💯7
+      - 🇮🇷🚑mr.karimi🚑1
+      - 🇮🇷🚑mr.karimi🚑2
+      - 🇫🇮🚑mr.karimi🚑3
+      - 🇷🇴🚑mr.karimi🚑4
+      - 🇺🇸🚑mr.karimi🚑5
+      - 🇸🇬🚑mr.karimi🚑6
+      - 🇸🇬🚑mr.karimi🚑7
+      - 🇮🇷🚑mr.karimi🚑8
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     tolerance: 50
     proxies:
-      - 🇮🇷💯Engineer Karimi💯1
-      - 🇮🇷💯Engineer Karimi💯2
-      - 🇮🇷💯Engineer Karimi💯3
-      - 🇩🇪💯Engineer Karimi💯4
-      - 🇩🇪💯Engineer Karimi💯5
-      - 🇸🇬💯Engineer Karimi💯6
-      - 🇸🇬💯Engineer Karimi💯7
+      - 🇮🇷🚑mr.karimi🚑1
+      - 🇮🇷🚑mr.karimi🚑2
+      - 🇫🇮🚑mr.karimi🚑3
+      - 🇷🇴🚑mr.karimi🚑4
+      - 🇺🇸🚑mr.karimi🚑5
+      - 🇸🇬🚑mr.karimi🚑6
+      - 🇸🇬🚑mr.karimi🚑7
+      - 🇮🇷🚑mr.karimi🚑8
   - name: 🌍 国外媒体
     type: select
     proxies:
       - 🚀 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 🇮🇷💯Engineer Karimi💯1
-      - 🇮🇷💯Engineer Karimi💯2
-      - 🇮🇷💯Engineer Karimi💯3
-      - 🇩🇪💯Engineer Karimi💯4
-      - 🇩🇪💯Engineer Karimi💯5
-      - 🇸🇬💯Engineer Karimi💯6
-      - 🇸🇬💯Engineer Karimi💯7
+      - 🇮🇷🚑mr.karimi🚑1
+      - 🇮🇷🚑mr.karimi🚑2
+      - 🇫🇮🚑mr.karimi🚑3
+      - 🇷🇴🚑mr.karimi🚑4
+      - 🇺🇸🚑mr.karimi🚑5
+      - 🇸🇬🚑mr.karimi🚑6
+      - 🇸🇬🚑mr.karimi🚑7
+      - 🇮🇷🚑mr.karimi🚑8
   - name: 📲 电报信息
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
-      - 🇮🇷💯Engineer Karimi💯1
-      - 🇮🇷💯Engineer Karimi💯2
-      - 🇮🇷💯Engineer Karimi💯3
-      - 🇩🇪💯Engineer Karimi💯4
-      - 🇩🇪💯Engineer Karimi💯5
-      - 🇸🇬💯Engineer Karimi💯6
-      - 🇸🇬💯Engineer Karimi💯7
+      - 🇮🇷🚑mr.karimi🚑1
+      - 🇮🇷🚑mr.karimi🚑2
+      - 🇫🇮🚑mr.karimi🚑3
+      - 🇷🇴🚑mr.karimi🚑4
+      - 🇺🇸🚑mr.karimi🚑5
+      - 🇸🇬🚑mr.karimi🚑6
+      - 🇸🇬🚑mr.karimi🚑7
+      - 🇮🇷🚑mr.karimi🚑8
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
       - 🎯 全球直连
       - 🚀 节点选择
-      - 🇮🇷💯Engineer Karimi💯1
-      - 🇮🇷💯Engineer Karimi💯2
-      - 🇮🇷💯Engineer Karimi💯3
-      - 🇩🇪💯Engineer Karimi💯4
-      - 🇩🇪💯Engineer Karimi💯5
-      - 🇸🇬💯Engineer Karimi💯6
-      - 🇸🇬💯Engineer Karimi💯7
+      - 🇮🇷🚑mr.karimi🚑1
+      - 🇮🇷🚑mr.karimi🚑2
+      - 🇫🇮🚑mr.karimi🚑3
+      - 🇷🇴🚑mr.karimi🚑4
+      - 🇺🇸🚑mr.karimi🚑5
+      - 🇸🇬🚑mr.karimi🚑6
+      - 🇸🇬🚑mr.karimi🚑7
+      - 🇮🇷🚑mr.karimi🚑8
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
-      - 🇮🇷💯Engineer Karimi💯1
-      - 🇮🇷💯Engineer Karimi💯2
-      - 🇮🇷💯Engineer Karimi💯3
-      - 🇩🇪💯Engineer Karimi💯4
-      - 🇩🇪💯Engineer Karimi💯5
-      - 🇸🇬💯Engineer Karimi💯6
-      - 🇸🇬💯Engineer Karimi💯7
+      - 🇮🇷🚑mr.karimi🚑1
+      - 🇮🇷🚑mr.karimi🚑2
+      - 🇫🇮🚑mr.karimi🚑3
+      - 🇷🇴🚑mr.karimi🚑4
+      - 🇺🇸🚑mr.karimi🚑5
+      - 🇸🇬🚑mr.karimi🚑6
+      - 🇸🇬🚑mr.karimi🚑7
+      - 🇮🇷🚑mr.karimi🚑8
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -126,13 +133,14 @@ proxy-groups:
       - 🚀 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 🇮🇷💯Engineer Karimi💯1
-      - 🇮🇷💯Engineer Karimi💯2
-      - 🇮🇷💯Engineer Karimi💯3
-      - 🇩🇪💯Engineer Karimi💯4
-      - 🇩🇪💯Engineer Karimi💯5
-      - 🇸🇬💯Engineer Karimi💯6
-      - 🇸🇬💯Engineer Karimi💯7
+      - 🇮🇷🚑mr.karimi🚑1
+      - 🇮🇷🚑mr.karimi🚑2
+      - 🇫🇮🚑mr.karimi🚑3
+      - 🇷🇴🚑mr.karimi🚑4
+      - 🇺🇸🚑mr.karimi🚑5
+      - 🇸🇬🚑mr.karimi🚑6
+      - 🇸🇬🚑mr.karimi🚑7
+      - 🇮🇷🚑mr.karimi🚑8
 
 rules:
 # 本地/局域网地址
@@ -140,6 +148,9 @@ rules:
 # ACL4SSR标志 如没有，代表不是用ACL4SSR规则
 # 本地/局域网地址
 # Router managed 路由器管理域名
+  - DOMAIN-SUFFIX,xnxx.com,DIRECT
+  - DOMAIN-SUFFIX,mci.ir,DIRECT
+  - GEOIP,IR,DIRECT
   - DOMAIN-SUFFIX,acl4.ssr,🎯 全球直连
   - DOMAIN-SUFFIX,ip6-localhost,🎯 全球直连
   - DOMAIN-SUFFIX,ip6-loopback,🎯 全球直连
