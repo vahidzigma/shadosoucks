@@ -1,61 +1,145 @@
+#
+#-------------------------------------------------------------#
+#  创建者：https://v2rayse.com
+#  创建时间：2023-07-07 13:05:24
+#  模版：v2rayse默认模版
+#  节点数量：9
+#-------------------------------------------------------------#
+#
 port: 7890
 socks-port: 7891
-redir-port: 7892
-mixed-port: 7893
-tproxy-port: 7895
-ipv6: false
-mode: rule
-log-level: silent
 allow-lan: true
+mode: Rule
+log-level: info
 external-controller: 0.0.0.0:9090
-secret: ""
-bind-address: "*"
-unified-delay: true
-profile:
-  store-selected: true
-dns:
-  enable: true
-  ipv6: false
-  enhanced-mode: redir-host
-  listen: 0.0.0.0:7874
-  nameserver:
-    - 8.8.8.8
-    - 1.0.0.1
-    - https://dns.google/dns-query
-  fallback:
-    - 1.1.1.1
-    - 8.8.4.4
-    - https://cloudflare-dns.com/dns-query
-    - 112.215.203.254
-  default-nameserver:
-    - 8.8.8.8
-    - 1.1.1.1
-    - 112.215.203.254
 proxies:
-  - name: vmess
-    server: mside3.easytome.net
-    port: 24453
-    type: vmess
-    uuid: d3468ca0-9442-499b-f64f-fdde57c72d83
-    alterId: 0
-    cipher: auto
-    tls: false
-    skip-cert-verify: true
-    servername: divarcdn.com
-    network: http
-    http-opts:
-      method: GET
-      path:
-        - /
-      headers:
-        Host:
-          - divarcdn.com
-    udp: true
+  - {"type":"vmess","name":"vmess_1","http-opts":{"path":["/"],"headers":{"Host":["divarcdn.com"]}},"server":"msifr.easytome.net","port":"54017","uuid":"8d67887e-8ed7-48e1-c16b-2ec913dc36db","alterId":"0","cipher":"auto","network":"http"}
+  - {"type":"vmess","name":"vmess_2","http-opts":{"path":["/"],"headers":{"Host":["divarcdn.com"]}},"server":"mside3.easytome.net","port":"24453","uuid":"d3468ca0-9442-499b-f64f-fdde57c72d83","alterId":"0","cipher":"auto","network":"http"}
+  - {"type":"vmess","name":"vmess_3","http-opts":{"path":["/"],"headers":{"Host":["divarcdn.com"]}},"server":"mside2.easytome.net","port":"17913","uuid":"240e2f96-0fb0-4e7b-ad18-edb86bfea5aa","alterId":"0","cipher":"auto","network":"http"}
+  - {"type":"vless","name":"vless_1","server":"vsro.pgafan.net","port":35247,"uuid":"83a760ae-7640-4a64-bca3-e00ec178df44","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"vsro.pgafan.net","ws-opts":{"path":"/","headers":{"host":"vsro.pgafan.net"}}}
+  - {"type":"vless","name":"vless_2","server":"msfi.easytome.net","port":35247,"uuid":"2b7390ae-767a-46da-9df9-0c88919e9b55","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"msfi.easytome.net","ws-opts":{"path":"/","headers":{"host":"msfi.easytome.net"}}}
+  - {"type":"vless","name":"vless_3","server":"msus.easytome.net","port":35911,"uuid":"5621b36b-91ed-4a0e-92f9-8204a50cec7a","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"divarcdn.com","ws-opts":{"path":"/","headers":{"host":"divarcdn.com"}}}
+  - {"type":"vless","name":"vless_4","server":"vsde2.pgafan.net","port":33622,"uuid":"f498014d-0135-4626-c259-c48d9b628a67","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","ws-opts":{"path":"/"}}
+  - {"type":"vmess","name":"zigma0101_1","http-opts":{"path":["/"],"headers":{"Host":["divarcdn.com"]}},"server":"mside3.easytome.net","port":"43776","uuid":"C4F22FBF-007A-6BF0-F242-9C8629E34879","alterId":"0","cipher":"auto","network":"http"}
+  - {"type":"vless","name":"zigma0101_2","server":"msifr.easytome.net","port":10415,"uuid":"944B7F58-989B-58AF-694B-C4A409AB0D79","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","ws-opts":{"path":"/"}}
 proxy-groups:
-  - name: FASTSSH-SSHKIT-HOWDY
+  - name: 🚀 节点选择
     type: select
     proxies:
-      - vmess
+      - ♻️ 自动选择
       - DIRECT
+      - vmess_1
+      - vmess_2
+      - vmess_3
+      - vless_1
+      - vless_2
+      - vless_3
+      - vless_4
+      - zigma0101_1
+      - zigma0101_2
+  - name: ♻️ 自动选择
+    type: url-test
+    url: https://instagram.com
+    interval: 300
+    tolerance: 50
+    proxies:
+      - vmess_1
+      - vmess_2
+      - vmess_3
+      - vless_1
+      - vless_2
+      - vless_3
+      - vless_4
+      - zigma0101_1
+      - zigma0101_2
+  - name: 🌍 国外媒体
+    type: select
+    proxies:
+      - 🚀 节点选择
+      - ♻️ 自动选择
+      - 🎯 全球直连
+      - vmess_1
+      - vmess_2
+      - vmess_3
+      - vless_1
+      - vless_2
+      - vless_3
+      - vless_4
+      - zigma0101_1
+      - zigma0101_2
+  - name: 📲 电报信息
+    type: select
+    proxies:
+      - 🚀 节点选择
+      - 🎯 全球直连
+      - vmess_1
+      - vmess_2
+      - vmess_3
+      - vless_1
+      - vless_2
+      - vless_3
+      - vless_4
+      - zigma0101_1
+      - zigma0101_2
+  - name: Ⓜ️ 微软服务
+    type: select
+    proxies:
+      - 🎯 全球直连
+      - 🚀 节点选择
+      - vmess_1
+      - vmess_2
+      - vmess_3
+      - vless_1
+      - vless_2
+      - vless_3
+      - vless_4
+      - zigma0101_1
+      - zigma0101_2
+  - name: 🍎 苹果服务
+    type: select
+    proxies:
+      - 🚀 节点选择
+      - 🎯 全球直连
+      - vmess_1
+      - vmess_2
+      - vmess_3
+      - vless_1
+      - vless_2
+      - vless_3
+      - vless_4
+      - zigma0101_1
+      - zigma0101_2
+  - name: 🎯 全球直连
+    type: select
+    proxies:
+      - DIRECT
+      - 🚀 节点选择
+      - ♻️ 自动选择
+  - name: 🛑 全球拦截
+    type: select
+    proxies:
+      - REJECT
+      - DIRECT
+  - name: 🍃 应用净化
+    type: select
+    proxies:
+      - REJECT
+      - DIRECT
+  - name: 🐟 漏网之鱼
+    type: select
+    proxies:
+      - 🚀 节点选择
+      - 🎯 全球直连
+      - ♻️ 自动选择
+      - vmess_1
+      - vmess_2
+      - vmess_3
+      - vless_1
+      - vless_2
+      - vless_3
+      - vless_4
+      - zigma0101_1
+      - zigma0101_2
 rules:
-  - MATCH,FASTSSH-SSHKIT-HOWDY
+  - GEOIP,IR,🎯 全球直连
+  - MATCH,🐟 漏网之鱼
