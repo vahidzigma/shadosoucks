@@ -1,7 +1,7 @@
 ####################################
 # 创建者：v2rayse.com
 # 客户端：Clash.Meta
-# 创建时间：20-07-2023 17:10:09
+# 创建时间：20-07-2023 17:26:18
 # 使用模版：V2RaySE 默认模版
 # 节点数量：9
 ####################################
@@ -22,102 +22,102 @@ dns:
     - tls://dns.google:853
 
 proxies:
-  - {"name":"mside3 vless","type":"vless","server":"mside3.easytome.net","port":29600,"uuid":"4AFB5C11-871F-FD0C-A0A7-BDC81CCE776A","tls":false,"network":"ws","ws-opts":{"path":"/"}}
-  - {"name":"msifr vmess","type":"vmess","server":"msifr.easytome.net","port":54017,"cipher":"auto","uuid":"8d67887e-8ed7-48e1-c16b-2ec913dc36db","alterId":0,"tls":false,"skip-cert-verify":true,"network":"http"}
-  - {"name":"mside3 vmess","type":"vmess","server":"mside3.easytome.net","port":24453,"cipher":"auto","uuid":"d3468ca0-9442-499b-f64f-fdde57c72d83","alterId":0,"tls":false,"skip-cert-verify":true,"network":"http"}
-  - {"name":"msifr vless","type":"vless","server":"msifr.easytome.net","port":24243,"uuid":"3D8E8F68-AE13-A0DA-EB3E-3FA30947C623","tls":false,"network":"ws","ws-opts":{"path":"/"}}
-  - {"name":"mside2 vless","type":"vless","server":"mside2.easytome.net","port":56317,"uuid":"128550ED-9DEC-2827-538F-D5AE5C5C6DEC","tls":false,"network":"ws","ws-opts":{"path":"/"}}
-  - {"name":"msiuki vless","type":"vless","server":"msiuki.easytome.net","port":56400,"uuid":"1AC0E0A7-10B6-E1AA-0A46-6409D6981A36","tls":false,"network":"ws","ws-opts":{"path":"/"}}
-  - {"name":"msirui vless","type":"vless","server":"msirui.easytome.net","port":56587,"uuid":"742FF904-B97C-E637-EF9B-FE4470EACCB5","tls":false,"network":"ws","ws-opts":{"path":"/"}}
-  - {"name":"mside2 vmess","type":"vmess","server":"mside2.easytome.net","port":17913,"cipher":"auto","uuid":"240e2f96-0fb0-4e7b-ad18-edb86bfea5aa","alterId":0,"tls":false,"skip-cert-verify":true,"network":"http"}
-  - {"name":"msius2 vless","type":"vless","server":"msius2.easytome.net","port":30816,"uuid":"33CE5D22-F54E-8365-ECC6-F8F381C856BB","tls":false,"network":"ws","ws-opts":{"path":"/"}}
+  - {"name":"آلمان ۲","type":"vmess","server":"mside2.easytome.net","port":17913,"cipher":"auto","uuid":"240e2f96-0fb0-4e7b-ad18-edb86bfea5aa","alterId":0,"tls":false,"skip-cert-verify":true,"network":"http"}
+  - {"name":"انگلستان ۱","type":"vless","server":"msiuki.easytome.net","port":56400,"uuid":"1AC0E0A7-10B6-E1AA-0A46-6409D6981A36","tls":false,"network":"ws","ws-opts":{"path":"/"}}
+  - {"name":"فرانسه ۲","type":"vmess","server":"msifr.easytome.net","port":54017,"cipher":"auto","uuid":"8d67887e-8ed7-48e1-c16b-2ec913dc36db","alterId":0,"tls":false,"skip-cert-verify":true,"network":"http"}
+  - {"name":"فرانسه ۱","type":"vless","server":"msifr.easytome.net","port":24243,"uuid":"3D8E8F68-AE13-A0DA-EB3E-3FA30947C623","tls":false,"network":"ws","ws-opts":{"path":"/"}}
+  - {"name":"آلمان ۱","type":"vless","server":"mside3.easytome.net","port":29600,"uuid":"4AFB5C11-871F-FD0C-A0A7-BDC81CCE776A","tls":false,"network":"ws","ws-opts":{"path":"/"}}
+  - {"name":"آلمان ۳","type":"vmess","server":"mside3.easytome.net","port":24453,"cipher":"auto","uuid":"d3468ca0-9442-499b-f64f-fdde57c72d83","alterId":0,"tls":false,"skip-cert-verify":true,"network":"http"}
+  - {"name":"روسیه ۲","type":"vless","server":"msius2.easytome.net","port":30816,"uuid":"33CE5D22-F54E-8365-ECC6-F8F381C856BB","tls":false,"network":"ws","ws-opts":{"path":"/"}}
+  - {"name":"روسیه ۱","type":"vless","server":"msirui.easytome.net","port":56587,"uuid":"742FF904-B97C-E637-EF9B-FE4470EACCB5","tls":false,"network":"ws","ws-opts":{"path":"/"}}
+  - {"name":"آلمان ۴","type":"vless","server":"mside2.easytome.net","port":56317,"uuid":"128550ED-9DEC-2827-538F-D5AE5C5C6DEC","tls":false,"network":"ws","ws-opts":{"path":"/"}}
 proxy-groups:
   - name: 🚀 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - DIRECT
-      - mside3 vless
-      - msifr vmess
-      - mside3 vmess
-      - msifr vless
-      - mside2 vless
-      - msiuki vless
-      - msirui vless
-      - mside2 vmess
-      - msius2 vless
+      - آلمان ۲
+      - انگلستان ۱
+      - فرانسه ۲
+      - فرانسه ۱
+      - آلمان ۱
+      - آلمان ۳
+      - روسیه ۲
+      - روسیه ۱
+      - آلمان ۴
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     tolerance: 50
     proxies:
-      - mside3 vless
-      - msifr vmess
-      - mside3 vmess
-      - msifr vless
-      - mside2 vless
-      - msiuki vless
-      - msirui vless
-      - mside2 vmess
-      - msius2 vless
+      - آلمان ۲
+      - انگلستان ۱
+      - فرانسه ۲
+      - فرانسه ۱
+      - آلمان ۱
+      - آلمان ۳
+      - روسیه ۲
+      - روسیه ۱
+      - آلمان ۴
   - name: 🌍 国外媒体
     type: select
     proxies:
       - 🚀 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - mside3 vless
-      - msifr vmess
-      - mside3 vmess
-      - msifr vless
-      - mside2 vless
-      - msiuki vless
-      - msirui vless
-      - mside2 vmess
-      - msius2 vless
+      - آلمان ۲
+      - انگلستان ۱
+      - فرانسه ۲
+      - فرانسه ۱
+      - آلمان ۱
+      - آلمان ۳
+      - روسیه ۲
+      - روسیه ۱
+      - آلمان ۴
   - name: 📲 电报信息
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
-      - mside3 vless
-      - msifr vmess
-      - mside3 vmess
-      - msifr vless
-      - mside2 vless
-      - msiuki vless
-      - msirui vless
-      - mside2 vmess
-      - msius2 vless
+      - آلمان ۲
+      - انگلستان ۱
+      - فرانسه ۲
+      - فرانسه ۱
+      - آلمان ۱
+      - آلمان ۳
+      - روسیه ۲
+      - روسیه ۱
+      - آلمان ۴
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
       - 🎯 全球直连
       - 🚀 节点选择
-      - mside3 vless
-      - msifr vmess
-      - mside3 vmess
-      - msifr vless
-      - mside2 vless
-      - msiuki vless
-      - msirui vless
-      - mside2 vmess
-      - msius2 vless
+      - آلمان ۲
+      - انگلستان ۱
+      - فرانسه ۲
+      - فرانسه ۱
+      - آلمان ۱
+      - آلمان ۳
+      - روسیه ۲
+      - روسیه ۱
+      - آلمان ۴
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
-      - mside3 vless
-      - msifr vmess
-      - mside3 vmess
-      - msifr vless
-      - mside2 vless
-      - msiuki vless
-      - msirui vless
-      - mside2 vmess
-      - msius2 vless
+      - آلمان ۲
+      - انگلستان ۱
+      - فرانسه ۲
+      - فرانسه ۱
+      - آلمان ۱
+      - آلمان ۳
+      - روسیه ۲
+      - روسیه ۱
+      - آلمان ۴
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -140,15 +140,15 @@ proxy-groups:
       - 🚀 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - mside3 vless
-      - msifr vmess
-      - mside3 vmess
-      - msifr vless
-      - mside2 vless
-      - msiuki vless
-      - msirui vless
-      - mside2 vmess
-      - msius2 vless
+      - آلمان ۲
+      - انگلستان ۱
+      - فرانسه ۲
+      - فرانسه ۱
+      - آلمان ۱
+      - آلمان ۳
+      - روسیه ۲
+      - روسیه ۱
+      - آلمان ۴
 
 rules:
 # 本地/局域网地址
@@ -156,6 +156,9 @@ rules:
 # ACL4SSR标志 如没有，代表不是用ACL4SSR规则
 # 本地/局域网地址
 # Router managed 路由器管理域名
+  - DOMAIN-SUFFIX,xnxx.com,DIRECT
+  - DOMAIN-SUFFIX,mci.ir,DIRECT
+  - GEOIP,IR,DIRECT
   - DOMAIN-SUFFIX,acl4.ssr,🎯 全球直连
   - DOMAIN-SUFFIX,ip6-localhost,🎯 全球直连
   - DOMAIN-SUFFIX,ip6-loopback,🎯 全球直连
