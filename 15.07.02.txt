@@ -30,7 +30,7 @@ proxies:
   - {"name":"هلند ۲","type":"ssr","server":"nsnl.imytvps.com","port":5000,"password":"$$Turb0+VN$$","cipher":"salsa20","obfs":"http_post","protocol":"auth_aes128_md5"}
   - {"name":"امریکا ۲","type":"ssr","server":"nsus4.imytvps.com","port":5000,"password":"+asd6a5s5df+","cipher":"chacha20","obfs":"http_simple","protocol":"auth_aes128_md5"}
   - {"name":"امریکا ۳","type":"ssr","server":"nsus6.imytvps.com","port":5000,"password":"+asd6a5s5df+","cipher":"salsa20","obfs":"http_post","protocol":"auth_aes128_md5"}
-  - {"name":"امریکا ۴","type":"ssr","server":"nsus5.imytvps.com","port":5000,"password":"BVga$@jah+","cipher":"chacha20","obfs":"http_simple","protocol":"auth_aes128_md5"}
+  - {"name":"امریکا ۴","type":"ssr","server":"nsus5.imytvps.com","port":5000,"password":"BVga$@jah+","cipher":"chacha","obfs":"http_simple","protocol":"auth_aes128_md5"}
 proxy-groups:
   - name: 🚀 节点选择
     type: select
