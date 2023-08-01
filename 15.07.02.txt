@@ -21,16 +21,16 @@ dns:
     - tls://dns.google:853
 
 proxies:
-  - {"name":"آلمان ۱","type":"ssr","server":"nsde3.imytvps.com","port":5000,"password":"Jh+287UBAd@+","cipher":"dummy","obfs":"http_simple","protocol":"auth_aes128_md5"}
+  - {"name":"آلمان ۱","type":"ssr","server":"nsde3.imytvps.com","port":5000,"password":"Jh+287UBAd@+","cipher":"chacha20","obfs":"http_simple","protocol":"auth_aes128_md5"}
   - {"name":"ترکیه ۱","type":"ssr","server":"sstr.imytvps.com","port":443,"password":"+asd6a5s5df+","cipher":"aes-128-cfb","obfs":"http_post","protocol":"auth_aes128_md5"}
   - {"name":"کانادا ۱","type":"ssr","server":"ssca.imytvps.com","port":443,"password":"$$Turb0VPN$$","cipher":"aes-128-cfb","obfs":"http_post","protocol":"auth_aes128_md5"}
-  - {"name":"هلند ۱","type":"ssr","server":"nsnl5.imytvps.com","port":5000,"password":"$$Turb0+VN$$","cipher":"dummy","obfs":"http_post","protocol":"auth_aes128_md5"}
-  - {"name":"امریکا ۱","type":"ssr","server":"nsus.irundns.net","port":5000,"password":"$$Turb0++VPN$$","cipher":"dummy","obfs":"http_post","protocol":"auth_aes128_md5"}
-  - {"name":"انگلیس ۱","type":"ssr","server":"nsuk2.imytvps.com","port":5000,"password":"+TuRB0V9N++","cipher":"chacha20-ietf","obfs":"http_simple","protocol":"auth_aes128_md5"}
-  - {"name":"هلند ۲","type":"ssr","server":"nsnl.imytvps.com","port":5000,"password":"$$Turb0+VN$$","cipher":"dummy","obfs":"http_post","protocol":"auth_aes128_md5"}
-  - {"name":"امریکا ۲","type":"ssr","server":"nsus4.imytvps.com","port":5000,"password":"+asd6a5s5df+","cipher":"dummy","obfs":"http_simple","protocol":"auth_aes128_md5"}
-  - {"name":"امریکا ۳","type":"ssr","server":"nsus6.imytvps.com","port":5000,"password":"+asd6a5s5df+","cipher":"dummy","obfs":"http_post","protocol":"auth_aes128_md5"}
-  - {"name":"امریکا ۴","type":"ssr","server":"nsus5.imytvps.com","port":5000,"password":"BVga$@jah+","cipher":"dummy","obfs":"http_simple","protocol":"auth_aes128_md5"}
+  - {"name":"هلند ۱","type":"ssr","server":"nsnl5.imytvps.com","port":5000,"password":"$$Turb0+VN$$","cipher":"salsa20","obfs":"http_post","protocol":"auth_aes128_md5"}
+  - {"name":"امریکا ۱","type":"ssr","server":"nsus.irundns.net","port":5000,"password":"$$Turb0++VPN$$","cipher":"chacha20","obfs":"http_post","protocol":"auth_aes128_md5"}
+  - {"name":"انگلیس ۱","type":"ssr","server":"nsuk2.imytvps.com","port":5000,"password":"+TuRB0V9N++","cipher":"chacha20","obfs":"http_simple","protocol":"auth_aes128_md5"}
+  - {"name":"هلند ۲","type":"ssr","server":"nsnl.imytvps.com","port":5000,"password":"$$Turb0+VN$$","cipher":"salsa20","obfs":"http_post","protocol":"auth_aes128_md5"}
+  - {"name":"امریکا ۲","type":"ssr","server":"nsus4.imytvps.com","port":5000,"password":"+asd6a5s5df+","cipher":"chacha20","obfs":"http_simple","protocol":"auth_aes128_md5"}
+  - {"name":"امریکا ۳","type":"ssr","server":"nsus6.imytvps.com","port":5000,"password":"+asd6a5s5df+","cipher":"salsa20","obfs":"http_post","protocol":"auth_aes128_md5"}
+  - {"name":"امریکا ۴","type":"ssr","server":"nsus5.imytvps.com","port":5000,"password":"BVga$@jah+","cipher":"chacha20","obfs":"http_simple","protocol":"auth_aes128_md5"}
 proxy-groups:
   - name: 🚀 节点选择
     type: select
