@@ -1,4 +1,4 @@
-# Shadowrocket: 2023-08-02 00:18:56
+# Shadowrocket: 2023-08-02 00:49:38
 [General]
 yaml = true
 bypass-system = true
@@ -22,8 +22,6 @@ JP = select,DIRECT
 US = select,DIRECT
 
 [Rule]
-DOMAIN-SUFFIX,mci.ir,DIRECT
-GEOIP,ir,DIRECT
 DOMAIN-SUFFIX,17gouwuba.com,REJECT
 DOMAIN-SUFFIX,186078.com,REJECT
 DOMAIN-SUFFIX,189key.com,REJECT
