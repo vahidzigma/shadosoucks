@@ -50,4 +50,5 @@ proxy-groups:
       - امریکا ۴
  
 rules:
+  - GEOIP,IR,DIRECT
   - MATCH,Zigma
