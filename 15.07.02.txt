@@ -32,7 +32,7 @@ proxies:
   - {"name":"امریکا ۳","type":"ssr","server":"nsus6.imytvps.com","port":5000,"password":"+asd6a5s5df+","cipher":"salsa20","obfs":"http_post","protocol":"auth_aes128_md5"}
   - {"name":"امریکا ۴","type":"ssr","server":"nsus5.imytvps.com","port":5000,"password":"BVga$@jah+","cipher":"chacha","obfs":"http_simple","protocol":"auth_aes128_md5"}
 proxy-groups:
-  - name: ♻️ 自动选择
+  - name: Zigma
     type: url-test
     url: https://instagram.com
     interval: 300
@@ -50,4 +50,4 @@ proxy-groups:
       - امریکا ۴
  
 rules:
-  - MATCH,♻️ 自动选择
+  - MATCH,Zigma
