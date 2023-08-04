@@ -50,5 +50,6 @@ proxy-groups:
       - امریکا ۴
  
 rules:
+  - DOMAIN-SUFFIX,mci.ir,DIRECT
   - GEOIP,IR,DIRECT
   - MATCH,Zigma
