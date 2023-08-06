@@ -1,9 +1,9 @@
 ####################################
 # 创建者：v2rayse.com
 # 客户端：Clash
-# 创建时间：07-08-2023 00:38:42
+# 创建时间：02-08-2023 01:55:25
 # 使用模版：V2RaySE 默认模版
-# 节点数量：1
+# 节点数量：10
 ####################################
 mixed-port: 7890
 allow-lan: true
@@ -21,46 +21,109 @@ dns:
     - tls://dns.google:853
 
 proxies:
-  - {"name":"سرورها در حال به روز رسانی","type":"ssr","server":"mci.ir","port":5000,"password":"$$Turb0VPN+$$","cipher":"dummy","obfs":"plain","protocol":"origin"}
+  - {"name":"آلمان ۱","type":"ssr","server":"nsde3.imytvps.com","port":5000,"password":"Jh+287UBAd@+","cipher":"dummy","obfs":"http_simple","protocol":"auth_aes128_md5"}
+  - {"name":"ترکیه ۱","type":"ssr","server":"sstr.imytvps.com","port":443,"password":"+asd6a5s5df+","cipher":"aes-128-cfb","obfs":"http_post","protocol":"auth_aes128_md5"}
+  - {"name":"کانادا ۱","type":"ssr","server":"ssca.imytvps.com","port":443,"password":"$$Turb0VPN$$","cipher":"aes-128-cfb","obfs":"http_post","protocol":"auth_aes128_md5"}
+  - {"name":"هلند ۱","type":"ssr","server":"nsnl5.imytvps.com","port":5000,"password":"$$Turb0+VN$$","cipher":"dummy","obfs":"http_post","protocol":"auth_aes128_md5"}
+  - {"name":"امریکا ۱","type":"ssr","server":"nsus.irundns.net","port":5000,"password":"$$Turb0++VPN$$","cipher":"dummy","obfs":"http_post","protocol":"auth_aes128_md5"}
+  - {"name":"انگلیس ۱","type":"ssr","server":"nsuk2.imytvps.com","port":5000,"password":"+TuRB0V9N++","cipher":"chacha20-ietf","obfs":"http_simple","protocol":"auth_aes128_md5"}
+  - {"name":"هلند ۲","type":"ssr","server":"nsnl.imytvps.com","port":5000,"password":"$$Turb0+VN$$","cipher":"dummy","obfs":"http_post","protocol":"auth_aes128_md5"}
+  - {"name":"امریکا ۲","type":"ssr","server":"nsus4.imytvps.com","port":5000,"password":"+asd6a5s5df+","cipher":"dummy","obfs":"http_simple","protocol":"auth_aes128_md5"}
+  - {"name":"امریکا ۳","type":"ssr","server":"nsus6.imytvps.com","port":5000,"password":"+asd6a5s5df+","cipher":"dummy","obfs":"http_post","protocol":"auth_aes128_md5"}
+  - {"name":"امریکا ۴","type":"ssr","server":"nsus5.imytvps.com","port":5000,"password":"BVga$@jah+","cipher":"dummy","obfs":"http_simple","protocol":"auth_aes128_md5"}
 proxy-groups:
   - name: 🚀 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - DIRECT
-      - سرورها در حال به روز رسانی
+      - آلمان ۱
+      - ترکیه ۱
+      - کانادا ۱
+      - هلند ۱
+      - امریکا ۱
+      - انگلیس ۱
+      - هلند ۲
+      - امریکا ۲
+      - امریکا ۳
+      - امریکا ۴
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     tolerance: 50
     proxies:
-      - سرورها در حال به روز رسانی
+      - آلمان ۱
+      - ترکیه ۱
+      - کانادا ۱
+      - هلند ۱
+      - امریکا ۱
+      - انگلیس ۱
+      - هلند ۲
+      - امریکا ۲
+      - امریکا ۳
+      - امریکا ۴
   - name: 🌍 国外媒体
     type: select
     proxies:
       - 🚀 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - سرورها در حال به روز رسانی
+      - آلمان ۱
+      - ترکیه ۱
+      - کانادا ۱
+      - هلند ۱
+      - امریکا ۱
+      - انگلیس ۱
+      - هلند ۲
+      - امریکا ۲
+      - امریکا ۳
+      - امریکا ۴
   - name: 📲 电报信息
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
-      - سرورها در حال به روز رسانی
+      - آلمان ۱
+      - ترکیه ۱
+      - کانادا ۱
+      - هلند ۱
+      - امریکا ۱
+      - انگلیس ۱
+      - هلند ۲
+      - امریکا ۲
+      - امریکا ۳
+      - امریکا ۴
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
       - 🎯 全球直连
       - 🚀 节点选择
-      - سرورها در حال به روز رسانی
+      - آلمان ۱
+      - ترکیه ۱
+      - کانادا ۱
+      - هلند ۱
+      - امریکا ۱
+      - انگلیس ۱
+      - هلند ۲
+      - امریکا ۲
+      - امریکا ۳
+      - امریکا ۴
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
-      - سرورها در حال به روز رسانی
+      - آلمان ۱
+      - ترکیه ۱
+      - کانادا ۱
+      - هلند ۱
+      - امریکا ۱
+      - انگلیس ۱
+      - هلند ۲
+      - امریکا ۲
+      - امریکا ۳
+      - امریکا ۴
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -83,7 +146,16 @@ proxy-groups:
       - 🚀 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - سرورها در حال به روز رسانی
+      - آلمان ۱
+      - ترکیه ۱
+      - کانادا ۱
+      - هلند ۱
+      - امریکا ۱
+      - انگلیس ۱
+      - هلند ۲
+      - امریکا ۲
+      - امریکا ۳
+      - امریکا ۴
 
 rules:
 # 本地/局域网地址
