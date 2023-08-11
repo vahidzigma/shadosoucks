@@ -21,13 +21,16 @@ dns:
     - tls://dns.google:853
 
 proxies:
-  - {"name":"🇮🇷_IR_Hossein_1","type":"vmess","server":"msifr.easytome.net","port":54017,"cipher":"auto","uuid":"8d67887e-8ed7-48e1-c16b-2ec913dc36db","alterId":0,"tls":false,"skip-cert-verify":true,"network":"tcp"}
-  - {"name":"🇮🇷_IR_Hossein_2","type":"vmess","server":"mside3.easytome.net","port":24453,"cipher":"auto","uuid":"d3468ca0-9442-499b-f64f-fdde57c72d83","alterId":0,"tls":false,"skip-cert-verify":true,"network":"tcp"}
-  - {"name":"🇮🇷_IR_Hossein_3","type":"vmess","server":"mside2.easytome.net","port":17913,"cipher":"auto","uuid":"240e2f96-0fb0-4e7b-ad18-edb86bfea5aa","alterId":0,"tls":false,"skip-cert-verify":true,"network":"tcp"}
-  - {"name":"🇷🇴_RO_Hossein_4","type":"vless","server":"vsro.pgafan.net","port":35247,"uuid":"83a760ae-7640-4a64-bca3-e00ec178df44","tls":true,"servername":"vsro.pgafan.net","network":"ws","ws-opts":{"path":"/"}}
-  - {"name":"🇫🇮_FI_Hossein_5","type":"vless","server":"msfi.easytome.net","port":35247,"uuid":"2b7390ae-767a-46da-9df9-0c88919e9b55","tls":true,"servername":"msfi.easytome.net","network":"ws","ws-opts":{"path":"/"}}
-  - {"name":"🇺🇸_US_Hossein_6","type":"vless","server":"msus.easytome.net","port":35911,"uuid":"5621b36b-91ed-4a0e-92f9-8204a50cec7a","tls":false,"network":"ws","ws-opts":{"path":"/"}}
-  - {"name":"🇩🇪_DE_Hossein_7","type":"vless","server":"vsde2.pgafan.net","port":33622,"uuid":"f498014d-0135-4626-c259-c48d9b628a67","tls":false,"network":"ws","ws-opts":{"path":"/"}}
+  - {"name":"آلمان ۱","type":"ssr","server":"nsde3.imytvps.com","port":5000,"password":"Jh+287UBAd@+","cipher":"chacha20","obfs":"http_simple","protocol":"auth_aes128_md5"}
+  - {"name":"ترکیه ۱","type":"ssr","server":"sstr.imytvps.com","port":443,"password":"+asd6a5s5df+","cipher":"aes-128-cfb","obfs":"http_post","protocol":"auth_aes128_md5"}
+  - {"name":"کانادا ۱","type":"ssr","server":"ssca.imytvps.com","port":443,"password":"$$Turb0VPN$$","cipher":"aes-128-cfb","obfs":"http_post","protocol":"auth_aes128_md5"}
+  - {"name":"هلند ۱","type":"ssr","server":"nsnl5.imytvps.com","port":5000,"password":"$$Turb0+VN$$","cipher":"salsa20","obfs":"http_post","protocol":"auth_aes128_md5"}
+  - {"name":"امریکا ۱","type":"ssr","server":"nsus.irundns.net","port":5000,"password":"$$Turb0++VPN$$","cipher":"chacha20","obfs":"http_post","protocol":"auth_aes128_md5"}
+  - {"name":"انگلیس ۱","type":"ssr","server":"nsuk2.imytvps.com","port":5000,"password":"+TuRB0V9N++","cipher":"chacha20","obfs":"http_simple","protocol":"auth_aes128_md5"}
+  - {"name":"هلند ۲","type":"ssr","server":"nsnl.imytvps.com","port":5000,"password":"$$Turb0+VN$$","cipher":"salsa20","obfs":"http_post","protocol":"auth_aes128_md5"}
+  - {"name":"امریکا ۲","type":"ssr","server":"nsus4.imytvps.com","port":5000,"password":"+asd6a5s5df+","cipher":"chacha20","obfs":"http_simple","protocol":"auth_aes128_md5"}
+  - {"name":"امریکا ۳","type":"ssr","server":"nsus6.imytvps.com","port":5000,"password":"+asd6a5s5df+","cipher":"salsa20","obfs":"http_post","protocol":"auth_aes128_md5"}
+  - {"name":"امریکا ۴","type":"ssr","server":"nsus5.imytvps.com","port":5000,"password":"BVga$@jah+","cipher":"chacha","obfs":"http_simple","protocol":"auth_aes128_md5"}
 proxy-groups:
   - name: Zigma
     type: url-test
@@ -35,13 +38,16 @@ proxy-groups:
     interval: 300
     tolerance: 50
     proxies:
-      - 🇮🇷_IR_Hossein_1
-      - 🇮🇷_IR_Hossein_2
-      - 🇮🇷_IR_Hossein_3
-      - 🇷🇴_RO_Hossein_4
-      - 🇫🇮_FI_Hossein_5
-      - 🇺🇸_US_Hossein_6
-      - 🇩🇪_DE_Hossein_7
+      - آلمان ۱
+      - ترکیه ۱
+      - کانادا ۱
+      - هلند ۱
+      - امریکا ۱
+      - انگلیس ۱
+      - هلند ۲
+      - امریکا ۲
+      - امریکا ۳
+      - امریکا ۴
  
 rules:
   - DOMAIN-SUFFIX,mci.ir,DIRECT
