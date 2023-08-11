@@ -17,17 +17,25 @@ dns:
   fallback:
     - 8.8.8.8
     - 8.8.4.4
+    - 1.1.1.1
     - tls://1.0.0.1:853
     - tls://dns.google:853
 
 proxies:
-  - {"name":"🇮🇷_IR_Hossein_1","type":"vmess","server":"msifr.easytome.net","port":54017,"cipher":"auto","uuid":"8d67887e-8ed7-48e1-c16b-2ec913dc36db","alterId":0,"tls":false,"skip-cert-verify":true,"network":"tcp"}
-  - {"name":"🇮🇷_IR_Hossein_2","type":"vmess","server":"mside3.easytome.net","port":24453,"cipher":"auto","uuid":"d3468ca0-9442-499b-f64f-fdde57c72d83","alterId":0,"tls":false,"skip-cert-verify":true,"network":"tcp"}
-  - {"name":"🇮🇷_IR_Hossein_3","type":"vmess","server":"mside2.easytome.net","port":17913,"cipher":"auto","uuid":"240e2f96-0fb0-4e7b-ad18-edb86bfea5aa","alterId":0,"tls":false,"skip-cert-verify":true,"network":"tcp"}
-  - {"name":"🇷🇴_RO_Hossein_4","type":"vless","server":"vsro.pgafan.net","port":35247,"uuid":"83a760ae-7640-4a64-bca3-e00ec178df44","tls":true,"servername":"vsro.pgafan.net","network":"ws","ws-opts":{"path":"/"}}
-  - {"name":"🇫🇮_FI_Hossein_5","type":"vless","server":"msfi.easytome.net","port":35247,"uuid":"2b7390ae-767a-46da-9df9-0c88919e9b55","tls":true,"servername":"msfi.easytome.net","network":"ws","ws-opts":{"path":"/"}}
-  - {"name":"🇺🇸_US_Hossein_6","type":"vless","server":"msus.easytome.net","port":35911,"uuid":"5621b36b-91ed-4a0e-92f9-8204a50cec7a","tls":false,"network":"ws","ws-opts":{"path":"/"}}
-  - {"name":"🇩🇪_DE_Hossein_7","type":"vless","server":"vsde2.pgafan.net","port":33622,"uuid":"f498014d-0135-4626-c259-c48d9b628a67","tls":false,"network":"ws","ws-opts":{"path":"/"}}
+  - {"name":"VIP_🇷🇴_4","type":"vless","server":"vsro.pgafan.net","port":35247,"uuid":"83a760ae-7640-4a64-bca3-e00ec178df44","tls":true,"servername":"vsro.pgafan.net","network":"ws","ws-opts":{"path":"/"}}
+  - {"name":"VIP_🇫🇮_5","type":"vless","server":"msfi.easytome.net","port":35247,"uuid":"2b7390ae-767a-46da-9df9-0c88919e9b55","tls":true,"servername":"msfi.easytome.net","network":"ws","ws-opts":{"path":"/"}}
+  - {"name":"VIP_🇺🇸_6","type":"vless","server":"msus.easytome.net","port":35911,"uuid":"5621b36b-91ed-4a0e-92f9-8204a50cec7a","tls":false,"network":"ws","ws-opts":{"path":"/"}}
+  - {"name":"VIP_🇩🇪_7","type":"vless","server":"vsde2.pgafan.net","port":33622,"uuid":"f498014d-0135-4626-c259-c48d9b628a67","tls":false,"network":"ws","ws-opts":{"path":"/"}}
+  - {"name":"VIP_🇺🇸_8","type":"trojan","server":"msus.easytome.net","port":53396,"udp":true,"password":"445566","sni":"msus.easytome.net","skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/"}}
+  - {"name":"VIP_🇫🇮_9","type":"vless","server":"msfi.easytome.net","port":19210,"uuid":"D7C12697-B2EF-8D2E-A066-E063EE567D5F","tls":true,"servername":"msfi.easytome.net","network":"ws","ws-opts":{"path":"/"}}
+  - {"name":"VIP_🇫🇮_10","type":"vmess","server":"msfi.easytome.net","port":45716,"cipher":"auto","uuid":"C98F50E0-7FB3-57B1-28E5-172DF1C386A5","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/"}}
+  - {"name":"VIP_🇮🇷_11","type":"vless","server":"msirui.easytome.net","port":56587,"uuid":"742FF904-B97C-E637-EF9B-FE4470EACCB5","tls":false,"network":"ws","ws-opts":{"path":"/"}}
+  - {"name":"VIP_🇮🇷_13","type":"vless","server":"mside2.easytome.net","port":56317,"uuid":"128550ED-9DEC-2827-538F-D5AE5C5C6DEC","tls":false,"network":"ws","ws-opts":{"path":"/"}}
+  - {"name":"VIP_🇷🇴_15","type":"vless","server":"vsro.pgafan.net","port":25374,"uuid":"162D2E1C-D1C4-D3DD-7E8D-4A764AFBC003","tls":false,"network":"ws","ws-opts":{"path":"/"}}
+  - {"name":"VIP_🇮🇷_16","type":"vless","server":"msiuki.easytome.net","port":56400,"uuid":"1AC0E0A7-10B6-E1AA-0A46-6409D6981A36","tls":false,"network":"ws","ws-opts":{"path":"/"}}
+  - {"name":"VIP_🇮🇷_17","type":"vless","server":"msius2.easytome.net","port":30816,"uuid":"33CE5D22-F54E-8365-ECC6-F8F381C856BB","tls":false,"network":"ws","ws-opts":{"path":"/"}}
+  - {"name":"VIP_🇩🇪_18","type":"vmess","server":"vsde2.pgafan.net","port":24027,"cipher":"auto","uuid":"BB8244EF-916C-D002-F83F-BD53DC626CDD","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/"}}
+  - {"name":"VIP_🇩🇪_19","type":"vless","server":"vsde2.pgafan.net","port":44251,"uuid":"FA69FB91-3342-2973-3C92-A95EF7CFB477","tls":false,"network":"ws","ws-opts":{"path":"/"}}
 proxy-groups:
   - name: Zigma
     type: url-test
@@ -35,13 +43,20 @@ proxy-groups:
     interval: 300
     tolerance: 50
     proxies:
-      - 🇮🇷_IR_Hossein_1
-      - 🇮🇷_IR_Hossein_2
-      - 🇮🇷_IR_Hossein_3
-      - 🇷🇴_RO_Hossein_4
-      - 🇫🇮_FI_Hossein_5
-      - 🇺🇸_US_Hossein_6
-      - 🇩🇪_DE_Hossein_7
+      - VIP_🇷🇴_4
+      - VIP_🇫🇮_5
+      - VIP_🇺🇸_6
+      - VIP_🇩🇪_7
+      - VIP_🇺🇸_8
+      - VIP_🇫🇮_9
+      - VIP_🇫🇮_10
+      - VIP_🇮🇷_11
+      - VIP_🇮🇷_13
+      - VIP_🇷🇴_15
+      - VIP_🇮🇷_16
+      - VIP_🇮🇷_17
+      - VIP_🇩🇪_18
+      - VIP_🇩🇪_19
  
 rules:
   - DOMAIN-SUFFIX,mci.ir,DIRECT
