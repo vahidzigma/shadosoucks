@@ -22,21 +22,15 @@ dns:
     - tls://dns.google:853
 
 proxies:
-  - {"name":"Mci.Clash_1","type":"ssr","server":"nsuk2.imytvps.com","port":5000,"password":"+TuRB0V9N++","cipher":"dummy","obfs":"http_simple","protocol":"auth_aes128_md5"}
-  - {"name":"Mci.Clash_2","type":"ssr","server":"nsnl.imytvps.com","port":5000,"password":"$$Turb0+VN$$","cipher":"dummy","obfs":"http_post","protocol":"auth_aes128_md5"}
-  - {"name":"Mci.Clash_3","type":"ssr","server":"nsfi.imytvps.com","port":443,"password":"+asd6a5s5df+","cipher":"aes-256-cfb","obfs":"http_post","protocol":"auth_aes128_md5"}
-  - {"name":"Mci.Clash_4","type":"ssr","server":"nsde3.imytvps.com","port":5000,"password":"Jh+287UBAd@+","cipher":"dummy","obfs":"http_simple","protocol":"auth_aes128_md5"}
-  - {"name":"Mci.Clash_5","type":"ssr","server":"nsde.imytvps.com","port":5000,"password":"Jh+287UBAd@+","cipher":"dummy","obfs":"http_post","protocol":"auth_aes128_md5"}
-  - {"name":"Mci.Clash_6","type":"ssr","server":"sstr.imytvps.com","port":443,"password":"+asd6a5s5df+","cipher":"aes-128-cfb","obfs":"http_post","protocol":"auth_aes128_md5"}
-  - {"name":"Mci.Clash_7","type":"ssr","server":"51.38.89.134","port":5000,"password":"+TUR807PN++","cipher":"aes-128-cfb","obfs":"http_simple","protocol":"auth_aes128_md5"}
-  - {"name":"Mci.Clash_8","type":"ssr","server":"nsus.imytvps.com","port":5000,"password":"$$Turb0++VPN$$","cipher":"dummy","obfs":"http_simple","protocol":"auth_aes128_md5"}
-  - {"name":"Mci.Clash_9","type":"ssr","server":"ssca.imytvps.com","port":443,"password":"$$Turb0VPN$$","cipher":"aes-128-cfb","obfs":"http_post","protocol":"auth_aes128_md5"}
-  - {"name":"Mci.Clash_10","type":"ssr","server":"nsus5.imytvps.com","port":5000,"password":"BVga$@jah+","cipher":"dummy","obfs":"http_simple","protocol":"auth_aes128_md5"}
-  - {"name":"Mci.Clash_11","type":"ssr","server":"nsus6.imytvps.com","port":5000,"password":"+asd6a5s5df+","cipher":"dummy","obfs":"http_post","protocol":"auth_aes128_md5"}
-  - {"name":"Mci.Clash_12","type":"vless","server":"vsro.pgafan.net","port":35247,"uuid":"83a760ae-7640-4a64-bca3-e00ec178df44","tls":true,"servername":"vsro.pgafan.net","network":"ws","ws-opts":{"path":"/"}}
-  - {"name":"Mci.Clash_13","type":"vless","server":"msfi.easytome.net","port":35247,"uuid":"2b7390ae-767a-46da-9df9-0c88919e9b55","tls":true,"servername":"msfi.easytome.net","network":"ws","ws-opts":{"path":"/"}}
-  - {"name":"Mci.Clash_14","type":"vless","server":"msus.easytome.net","port":35911,"uuid":"5621b36b-91ed-4a0e-92f9-8204a50cec7a","tls":false,"servername":"divarcdn.com","network":"ws","ws-opts":{"path":"/"}}
-  - {"name":"Mci.Clash_15","type":"vless","server":"vsde2.pgafan.net","port":33622,"uuid":"f498014d-0135-4626-c259-c48d9b628a67","tls":false,"network":"ws","ws-opts":{"path":"/"}}
+  - {"name":"🇫🇮_VIP_1","type":"vless","server":"cdn13.yahoo.haami.cfd","port":443,"uuid":"72a28bef-3c0d-4134-843e-2708a94a5e9e","tls":true}
+  - {"name":"🇫🇮_VIP_2","type":"vless","server":"msfi.easytome.net","port":35247,"uuid":"2b7390ae-767a-46da-9df9-0c88919e9b55","tls":true,"network":"ws","ws-opts":{"path":"/"}}
+  - {"name":"🇮🇷_VIP_3","type":"vless","server":"msitr.easytome.net","port":26169,"uuid":"151B655B-D95F-2119-7F9E-AC47FBBE8ACF","tls":false}
+  - {"name":"🇮🇷_VIP_4","type":"vless","server":"mside2.easytome.net","port":56317,"uuid":"128550ED-9DEC-2827-538F-D5AE5C5C6DEC","tls":false}
+  - {"name":"🇮🇷_VIP_5","type":"vless","server":"msitr.easytome.net","port":11861,"uuid":"93503B5C-7266-9699-4D47-9AAE8F8695DA","tls":false}
+  - {"name":"🇮🇷_VIP_6","type":"vless","server":"mside2.easytome.net","port":54176,"uuid":"489D5709-1E5A-E40D-B320-1560C22CAF51","tls":false}
+  - {"name":"🇮🇷_VIP_7","type":"vless","server":"msirui.easytome.net","port":56587,"uuid":"742FF904-B97C-E637-EF9B-FE4470EACCB5","tls":false}
+  - {"name":"🇮🇷_VIP_8","type":"vless","server":"mside2.easytome.net","port":11875,"uuid":"7AE35DCB-B538-6643-53CF-A6ECCDA887B1","tls":false}
+  - {"name":"🇷🇺_VIP_9","type":"vless","server":"ae.teuto.ir","port":443,"udp":true,"uuid":"ba159afc-da09-41f7-b848-ca0aef7b1ec4","tls":true,"servername":"cdnlive.presstv.ir","flow":"xtls-rprx-vision","network":"tcp","reality-opts":{"public-key":"aqX6k90fyWqVLEa1N_Wqms5oBlMp1VxsmsFiCb_FFSU","short-id":"583da39fe62a4409"},"client-fingerprint":"chrome"}
 proxy-groups:
   - name: Zigma
     type: url-test
@@ -44,21 +38,15 @@ proxy-groups:
     interval: 300
     tolerance: 50
     proxies:
-      - Mci.Clash_1
-      - Mci.Clash_2
-      - Mci.Clash_3
-      - Mci.Clash_4
-      - Mci.Clash_5
-      - Mci.Clash_6
-      - Mci.Clash_7
-      - Mci.Clash_8
-      - Mci.Clash_9
-      - Mci.Clash_10
-      - Mci.Clash_11
-      - Mci.Clash_12
-      - Mci.Clash_13
-      - Mci.Clash_14
-      - Mci.Clash_15
+      - 🇫🇮_VIP_1
+      - 🇫🇮_VIP_2
+      - 🇮🇷_VIP_3
+      - 🇮🇷_VIP_4
+      - 🇮🇷_VIP_5
+      - 🇮🇷_VIP_6
+      - 🇮🇷_VIP_7
+      - 🇮🇷_VIP_8
+      - 🇷🇺_VIP_9
  
 rules:
   - DOMAIN-SUFFIX,mci.ir,DIRECT
