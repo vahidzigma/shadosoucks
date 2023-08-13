@@ -22,7 +22,7 @@ dns:
     - tls://dns.google:853
 
 proxies:
-- {"name":"tavuser001","type":"vmess","server":"msitr.easytome.net","port":18474,"cipher":"auto","uuid":"40ED742E-F1FC-8F7E-7C2E-00DE4970B6F1","alterId":0,"tls":false,"skip-cert-verify":true,"network":"tcp"}
+- {"name":"tavuser001","type":"vmess","server":"msitr.easytome.net","port":18474,"cipher":"auto","uuid":"40ED742E-F1FC-8F7E-7C2E-00DE4970B6F1","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws"}
 proxy-groups:
   - name: Zigma
     type: url-test
