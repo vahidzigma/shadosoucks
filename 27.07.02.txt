@@ -22,14 +22,14 @@ dns:
     - tls://dns.google:853
 
 proxies:
-  - {"name":"🇫🇮_VIP_1","type":"vless","server":"cdn13.yahoo.haami.cfd","port":443,"uuid":"72a28bef-3c0d-4134-843e-2708a94a5e9e","tls":true}
+  - {"name":"🇫🇮_VIP_1","type":"vless","server":"cdn13.yahoo.haami.cfd","port":443,"uuid":"72a28bef-3c0d-4134-843e-2708a94a5e9e","tls":true,"servername":"www.yahoo.com","flow":"xtls-rprx-vision","network":"tcp","reality-opts":{"public-key":"GAUjNf1wQnDm5ziCGqRmb3yVfU9bg_UPwZ2_QU4JWRU","short-id":"6bb85179e30d4fc2"},"client-fingerprint":"chrome"}
   - {"name":"🇫🇮_VIP_2","type":"vless","server":"msfi.easytome.net","port":35247,"uuid":"2b7390ae-767a-46da-9df9-0c88919e9b55","tls":true,"network":"ws","ws-opts":{"path":"/"}}
-  - {"name":"🇮🇷_VIP_3","type":"vless","server":"msitr.easytome.net","port":26169,"uuid":"151B655B-D95F-2119-7F9E-AC47FBBE8ACF","tls":false}
-  - {"name":"🇮🇷_VIP_4","type":"vless","server":"mside2.easytome.net","port":56317,"uuid":"128550ED-9DEC-2827-538F-D5AE5C5C6DEC","tls":false}
-  - {"name":"🇮🇷_VIP_5","type":"vless","server":"msitr.easytome.net","port":11861,"uuid":"93503B5C-7266-9699-4D47-9AAE8F8695DA","tls":false}
-  - {"name":"🇮🇷_VIP_6","type":"vless","server":"mside2.easytome.net","port":54176,"uuid":"489D5709-1E5A-E40D-B320-1560C22CAF51","tls":false}
-  - {"name":"🇮🇷_VIP_7","type":"vless","server":"msirui.easytome.net","port":56587,"uuid":"742FF904-B97C-E637-EF9B-FE4470EACCB5","tls":false}
-  - {"name":"🇮🇷_VIP_8","type":"vless","server":"mside2.easytome.net","port":11875,"uuid":"7AE35DCB-B538-6643-53CF-A6ECCDA887B1","tls":false}
+  - {"name":"🇮🇷_VIP_3","type":"vless","server":"msitr.easytome.net","port":26169,"uuid":"151B655B-D95F-2119-7F9E-AC47FBBE8ACF","tls":false,"network":"ws"}
+  - {"name":"🇮🇷_VIP_4","type":"vless","server":"mside2.easytome.net","port":56317,"uuid":"128550ED-9DEC-2827-538F-D5AE5C5C6DEC","tls":false,"network":"ws"}
+  - {"name":"🇮🇷_VIP_5","type":"vless","server":"msitr.easytome.net","port":47200,"uuid":"697AFF59-3F0C-05AA-0E85-A6F88DF815C2","tls":false,"network":"ws"}
+  - {"name":"🇮🇷_VIP_6","type":"vless","server":"mside2.easytome.net","port":54176,"uuid":"489D5709-1E5A-E40D-B320-1560C22CAF51","tls":false,"network":"ws"}
+  - {"name":"🇮🇷_VIP_7","type":"vless","server":"msirui.easytome.net","port":56587,"uuid":"742FF904-B97C-E637-EF9B-FE4470EACCB5","tls":false,"network":"ws"}
+  - {"name":"🇮🇷_VIP_8","type":"vless","server":"mside2.easytome.net","port":11875,"uuid":"7AE35DCB-B538-6643-53CF-A6ECCDA887B1","tls":false,"network":"ws"}
   - {"name":"🇷🇺_VIP_9","type":"vless","server":"ae.teuto.ir","port":443,"udp":true,"uuid":"ba159afc-da09-41f7-b848-ca0aef7b1ec4","tls":true,"servername":"cdnlive.presstv.ir","flow":"xtls-rprx-vision","network":"tcp","reality-opts":{"public-key":"aqX6k90fyWqVLEa1N_Wqms5oBlMp1VxsmsFiCb_FFSU","short-id":"583da39fe62a4409"},"client-fingerprint":"chrome"}
 proxy-groups:
   - name: Zigma
