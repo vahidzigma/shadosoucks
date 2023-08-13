@@ -26,7 +26,7 @@ proxies:
   - {"name":"🇫🇮_VIP_2","type":"vless","server":"msfi.easytome.net","port":35247,"uuid":"2b7390ae-767a-46da-9df9-0c88919e9b55","tls":true,"network":"ws","ws-opts":{"path":"/"}}
   - {"name":"🇮🇷_VIP_3","type":"vless","server":"msitr.easytome.net","port":26169,"uuid":"151B655B-D95F-2119-7F9E-AC47FBBE8ACF","tls":false,"network":"ws"}
   - {"name":"🇮🇷_VIP_4","type":"vless","server":"mside2.easytome.net","port":56317,"uuid":"128550ED-9DEC-2827-538F-D5AE5C5C6DEC","tls":false,"network":"ws"}
-  - {"name":"🇮🇷_VIP_5","type":"vless","server":"msitr.easytome.net","port":26169,"uuid":"151B655B-D95F-2119-7F9E-AC47FBBE8ACF","tls":false,"network":"ws"}
+  - {"name":"🇮🇷_VIP_5","type":"vless","server":"msitr.easytome.net","port":47200,"uuid":"697AFF59-3F0C-05AA-0E85-A6F88DF815C2","tls":false,"network":"ws"}
   - {"name":"🇮🇷_VIP_6","type":"vless","server":"mside2.easytome.net","port":54176,"uuid":"489D5709-1E5A-E40D-B320-1560C22CAF51","tls":false,"network":"ws"}
   - {"name":"🇮🇷_VIP_7","type":"vless","server":"msirui.easytome.net","port":56587,"uuid":"742FF904-B97C-E637-EF9B-FE4470EACCB5","tls":false,"network":"ws"}
   - {"name":"🇮🇷_VIP_8","type":"vless","server":"mside2.easytome.net","port":11875,"uuid":"7AE35DCB-B538-6643-53CF-A6ECCDA887B1","tls":false,"network":"ws"}
