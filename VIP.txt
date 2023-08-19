@@ -22,15 +22,24 @@ dns:
     - tls://dns.google:853
 
 proxies:
-  - {"name":"🇫🇮_VIP_1","type":"vless","server":"cdn13.yahoo.haami.cfd","port":443,"uuid":"72a28bef-3c0d-4134-843e-2708a94a5e9e","tls":true,"servername":"www.yahoo.com","flow":"xtls-rprx-vision","network":"tcp","reality-opts":{"public-key":"GAUjNf1wQnDm5ziCGqRmb3yVfU9bg_UPwZ2_QU4JWRU","short-id":"6bb85179e30d4fc2"},"client-fingerprint":"chrome"}
-  - {"name":"🇫🇮_VIP_2","type":"vless","server":"msfi.easytome.net","port":35247,"uuid":"2b7390ae-767a-46da-9df9-0c88919e9b55","tls":true,"network":"ws","ws-opts":{"path":"/"}}
-  - {"name":"🇮🇷_VIP_3","type":"vless","server":"msitr.easytome.net","port":26169,"uuid":"151B655B-D95F-2119-7F9E-AC47FBBE8ACF","tls":false,"network":"ws"}
-  - {"name":"🇮🇷_VIP_4","type":"vless","server":"mside2.easytome.net","port":56317,"uuid":"128550ED-9DEC-2827-538F-D5AE5C5C6DEC","tls":false,"network":"ws"}
-  - {"name":"🇮🇷_VIP_5","type":"vless","server":"msitr.easytome.net","port":47200,"uuid":"697AFF59-3F0C-05AA-0E85-A6F88DF815C2","tls":false,"network":"ws"}
-  - {"name":"🇮🇷_VIP_6","type":"vless","server":"mside2.easytome.net","port":54176,"uuid":"489D5709-1E5A-E40D-B320-1560C22CAF51","tls":false,"network":"ws"}
-  - {"name":"🇮🇷_VIP_7","type":"vless","server":"msirui.easytome.net","port":56587,"uuid":"742FF904-B97C-E637-EF9B-FE4470EACCB5","tls":false,"network":"ws"}
-  - {"name":"🇮🇷_VIP_8","type":"vless","server":"mside2.easytome.net","port":11875,"uuid":"7AE35DCB-B538-6643-53CF-A6ECCDA887B1","tls":false,"network":"ws"}
-  - {"name":"🇷🇺_VIP_9","type":"vless","server":"ae.teuto.ir","port":443,"udp":true,"uuid":"ba159afc-da09-41f7-b848-ca0aef7b1ec4","tls":true,"servername":"cdnlive.presstv.ir","flow":"xtls-rprx-vision","network":"tcp","reality-opts":{"public-key":"aqX6k90fyWqVLEa1N_Wqms5oBlMp1VxsmsFiCb_FFSU","short-id":"583da39fe62a4409"},"client-fingerprint":"chrome"}
+  - {"name":"Zigma_🇺🇸_1","type":"vless","server":"htamiz6.kaghazacharrangi.sbs","port":80,"uuid":"f73e7e56-5971-4d2d-e32f-8e55371a29d4","tls":false,"network":"tcp"}
+  - {"name":"Zigma_🇺🇸_2","type":"vless","server":"htamiz8.kaghazacharrangi.sbs","port":80,"uuid":"4d814e3a-e7f5-4823-8da5-c0357db87384","tls":false,"network":"tcp"}
+  - {"name":"Zigma_🇺🇸_3","type":"vless","server":"htamiz7.kaghazacharrangi.sbs","port":80,"uuid":"298c3f47-1f48-4855-9b49-6f8e101c30ab","tls":false,"network":"tcp"}
+  - {"name":"Zigma_🇺🇸_4","type":"vless","server":"173.245.58.34","port":443,"uuid":"6e34f2c5-6c71-4010-c292-10d05ef4a9a2","tls":true,"servername":"admin.quranmajid.eu.org","network":"ws","ws-opts":{"path":"/?ed=2048"}}
+  - {"name":"Zigma_🇺🇸_5","type":"vless","server":"141.101.113.89","port":443,"uuid":"6e34f2c5-6c71-4010-c292-10d05ef4a9a2","tls":true,"servername":"admin.quranmajid.eu.org","network":"ws","ws-opts":{"path":"/?ed=2048"}}
+  - {"name":"Zigma_🇺🇸_6","type":"vless","server":"104.18.210.98","port":443,"uuid":"6e34f2c5-6c71-4010-c292-10d05ef4a9a2","tls":true,"servername":"admin.quranmajid.eu.org","network":"ws","ws-opts":{"path":"/?ed=2048"}}
+  - {"name":"Zigma_🇺🇸_7","type":"vless","server":"lightning6-joinbede.ddns.net","port":2083,"uuid":"7ec325e8-cb41-4960-dcb7-0dce18ea6e0d","tls":true,"servername":"liV2ray.z2-lightning6.sbs","network":"grpc"}
+  - {"name":"Zigma_🇺🇸_8","type":"vless","server":"166.0.162.252","port":17373,"uuid":"69872ceb-ed34-4201-9339-0acf4a4932ff","tls":false,"network":"grpc"}
+  - {"name":"Zigma_🇺🇸_9","type":"vless","server":"nimv2chanel.ddns.net","port":2096,"uuid":"bf4d85dd-a5a0-4c43-8f35-5bd4693d1c64","tls":true,"servername":"ch.nimvpnir.xyz","network":"grpc"}
+  - {"name":"Zigma_🇺🇸_10","type":"vless","server":"alopratorlgvpn13.ddns.net","port":2087,"uuid":"c00c4daf-f359-4cad-a67f-5494ce63991c","tls":true,"servername":"chanel.1lagvpn13.cfd","network":"grpc"}
+  - {"name":"Zigma_🇺🇸_11","type":"vless","server":"tel.arv2ray.host","port":2053,"uuid":"3422a938-d184-4670-a146-f0b0bddac708","tls":true,"servername":"tel.ArV2ray.link","network":"ws","ws-opts":{"path":"/"}}
+  - {"name":"Zigma_🇺🇸_12","type":"vless","server":"mci-shhproxy.ddns.net","port":2087,"uuid":"5188f1d8-29f7-4a9e-8078-44d21e9c19e4","tls":true,"servername":"i.ShV2ray.cfd","network":"grpc"}
+  - {"name":"Zigma_🇺🇸_13","type":"vless","server":"103.outline-vpn.cloud","port":2082,"uuid":"64c714e0-cfac-412a-8239-d0cfc89e6080","tls":false,"servername":"m.n.1.irancellserver.sbs","network":"ws","ws-opts":{"path":"/"}}
+  - {"name":"Zigma_🇺🇸_14","type":"vless","server":"12join.outline-vpn.cloud","port":443,"uuid":"884f9b2c-f0c5-44dd-a68e-3e39ce93bb39","tls":true,"servername":"cf-wkrs-pages-vless-aoy.pages.dev","network":"ws","ws-opts":{"path":"/?ed=2048"}}
+  - {"name":"Zigma_🇺🇸_15","type":"vless","server":"104.31.16.65","port":80,"uuid":"f4721b5a-507d-4477-b483-ea8fbf84d3b3","tls":false,"servername":"INt.MahdAviat.Uk","network":"ws","ws-opts":{"path":"mafatiholjenan-application"}}
+  - {"name":"Zigma_🇺🇸_16","type":"vless","server":"104.31.16.65","port":2053,"uuid":"3422a938-d184-4670-a146-f0b0bddac708","tls":true,"servername":"tel.ArV2ray.link","network":"ws","ws-opts":{"path":"/"}}
+  - {"name":"Zigma_🇺🇸_17","type":"vless","server":"172.67.136.127","port":2053,"uuid":"3422a938-d184-4670-a146-f0b0bddac708","tls":true,"servername":"tel.ArV2ray.link","network":"ws","ws-opts":{"path":"/"}}
+  - {"name":"Zigma_🇺🇸_18","type":"vless","server":"104.31.16.9","port":80,"uuid":"14bda692-3e41-4df0-a04b-ae2225760e7b","tls":false,"servername":"title.eitaa.mom","network":"ws","ws-opts":{"path":"/backup"}}
 proxy-groups:
   - name: Zigma
     type: url-test
@@ -38,15 +47,24 @@ proxy-groups:
     interval: 300
     tolerance: 50
     proxies:
-      - 🇫🇮_VIP_1
-      - 🇫🇮_VIP_2
-      - 🇮🇷_VIP_3
-      - 🇮🇷_VIP_4
-      - 🇮🇷_VIP_5
-      - 🇮🇷_VIP_6
-      - 🇮🇷_VIP_7
-      - 🇮🇷_VIP_8
-      - 🇷🇺_VIP_9
+      - Zigma_🇺🇸_1
+      - Zigma_🇺🇸_2
+      - Zigma_🇺🇸_3
+      - Zigma_🇺🇸_4
+      - Zigma_🇺🇸_5
+      - Zigma_🇺🇸_6
+      - Zigma_🇺🇸_7
+      - Zigma_🇺🇸_8
+      - Zigma_🇺🇸_9
+      - Zigma_🇺🇸_10
+      - Zigma_🇺🇸_11
+      - Zigma_🇺🇸_12
+      - Zigma_🇺🇸_13
+      - Zigma_🇺🇸_14
+      - Zigma_🇺🇸_15
+      - Zigma_🇺🇸_16
+      - Zigma_🇺🇸_17
+      - Zigma_🇺🇸_18
  
 rules:
   - DOMAIN-SUFFIX,mci.ir,DIRECT
