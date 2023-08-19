@@ -22,14 +22,11 @@ dns:
     - tls://dns.google:853
 
 proxies:
-  - {"name":"🇮🇷_Vip_1","type":"vless","server":"mside2.easytome.net","port":54176,"uuid":"489D5709-1E5A-E40D-B320-1560C22CAF51","tls":false,"network":"ws","ws-opts":{"path":"/"}}
-  - {"name":"🇮🇷_Vip_2","type":"vless","server":"msirui.easytome.net","port":10623,"uuid":"0A907662-8C57-1779-264A-F42FF2E4BBD1","tls":false,"network":"ws","ws-opts":{"path":"/"}}
-  - {"name":"🇮🇷_Vip_3","type":"vless","server":"mside2.easytome.net","port":56317,"uuid":"128550ED-9DEC-2827-538F-D5AE5C5C6DEC","tls":false,"network":"ws","ws-opts":{"path":"/"}}
-  - {"name":"🇮🇷_Vip_4","type":"vless","server":"msirui.easytome.net","port":15303,"uuid":"56430012-E1DF-2298-41C8-A8F183E7452F","tls":false,"network":"ws","ws-opts":{"path":"/"}}
-  - {"name":"🇮🇷_Vip_5","type":"vless","server":"mside2.easytome.net","port":11875,"uuid":"7AE35DCB-B538-6643-53CF-A6ECCDA887B1","tls":false,"network":"ws","ws-opts":{"path":"/"}}
-  - {"name":"🇮🇷_Vip_6","type":"vless","server":"msirui.easytome.net","port":56587,"uuid":"742FF904-B97C-E637-EF9B-FE4470EACCB5","tls":false,"network":"ws","ws-opts":{"path":"/"}}
-  - {"name":"🇮🇷_Vip_7","type":"vless","server":"msirui.easytome.net","port":43387,"uuid":"6EC1627F-8C7C-13A9-0A43-3ED44CA23243","tls":false,"network":"ws","ws-opts":{"path":"/"}}
-  - {"name":"🇮🇷_Vip_8","type":"vless","server":"mside2.easytome.net","port":57726,"uuid":"8025E7DA-5375-3898-8B6B-C15E0890162D","tls":false,"network":"ws","ws-opts":{"path":"/"}}
+  - {"name":"ok_1","type":"ssr","server":"sstr.imytvps.com","port":443,"password":"+asd6a5s5df+","cipher":"aes-128-cfb","obfs":"http_post","protocol":"auth_aes128_md5"}
+  - {"name":"ok_2","type":"ssr","server":"nsde3.imytvps.com","port":5000,"password":"Jh+287UBAd@+","cipher":"dummy","obfs":"http_simple","protocol":"auth_aes128_md5"}
+  - {"name":"ok_3","type":"ssr","server":"nsnl.imytvps.com","port":5000,"password":"$$Turb0+VN$$","cipher":"dummy","obfs":"http_post","protocol":"auth_aes128_md5"}
+  - {"name":"ok_4","type":"ssr","server":"nsus.irundns.net","port":5000,"password":"$$Turb0++VPN$$","cipher":"dummy","obfs":"http_post","protocol":"auth_aes128_md5"}
+  - {"name":"ok_5","type":"ssr","server":"nsus.imytvps.com","port":5000,"password":"$$Turb0++VPN$$","cipher":"dummy","obfs":"http_simple","protocol":"auth_aes128_md5"}
 proxy-groups:
   - name: Zigma
     type: url-test
@@ -37,14 +34,11 @@ proxy-groups:
     interval: 300
     tolerance: 50
     proxies:
-      - 🇮🇷_Vip_1
-      - 🇮🇷_Vip_2
-      - 🇮🇷_Vip_3
-      - 🇮🇷_Vip_4
-      - 🇮🇷_Vip_5
-      - 🇮🇷_Vip_6
-      - 🇮🇷_Vip_7
-      - 🇮🇷_Vip_8
+      - ok_1
+      - ok_2
+      - ok_3
+      - ok_4
+      - ok_5
  
 rules:
   - DOMAIN-SUFFIX,mci.ir,DIRECT
