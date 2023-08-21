@@ -108,76 +108,326 @@
       "tag": "Internet",
       "outbounds": [
         "Best Latency",
+        "vMess",
         "vless",
+        "vless 2",
+        "vless 3",
         "vLess-TCP-turbo",
-        "Tavakoli.Vip90",
-        "Tavakoli.Vip90 2",
-        "Tavakoli.Vip90 3",
-        "Tavakoli.Vip90 4",
-        "Tavakoli.Vip90 5",
-        "Tavakoli.Vip90 6",
-        "Tavakoli.Vip90 7",
-        "Tavakoli.Vip89",
-        "Tavakoli.Vip90 8",
-        "Tavakoli.Vip90 9",
-        "Tavakoli.Vip90 10",
-        "Tavakoli.Vip90 11",
-        "Tavakoli.Vip90 12",
-        "Tavakoli.Vip90 13",
-        "Tavakoli.Vip90 14",
-        "Tavakoli.Vip90 15",
-        "Tavakoli.Vip90 16",
-        "Tavakoli.Vip90 17",
-        "Tavakoli.Vip90 18",
-        "Tavakoli.Vip90 19",
-        "سرورها در حال به روز رسانی",
-        "Tavakoli.Vip90 20",
-        "Tavakoli.Vip90 21",
-        "Tavakoli.Vip90 22",
-        "Tavakoli.Vip90 23",
-        "Tavakoli.Vip90 24",
-        "Tavakoli.Vip90 25"
+        "tavuser003",
+        "tavuser003 2",
+        "tavuser003 3",
+        "tavuser04",
+        "tavuser04 2",
+        "tavuser003 4",
+        "vless 4",
+        "vLess-TCP-turbo 2",
+        "tavuser001",
+        "tavuser001 2",
+        "tavuser001 3",
+        "tavuser001 4",
+        "tavuser001 5",
+        "tavuser002",
+        "tavuser002 2"
       ]
     },
     {
       "type": "urltest",
       "tag": "Best Latency",
       "outbounds": [
+        "vMess",
         "vless",
+        "vless 2",
+        "vless 3",
         "vLess-TCP-turbo",
-        "Tavakoli.Vip90",
-        "Tavakoli.Vip90 2",
-        "Tavakoli.Vip90 3",
-        "Tavakoli.Vip90 4",
-        "Tavakoli.Vip90 5",
-        "Tavakoli.Vip90 6",
-        "Tavakoli.Vip90 7",
-        "Tavakoli.Vip89",
-        "Tavakoli.Vip90 8",
-        "Tavakoli.Vip90 9",
-        "Tavakoli.Vip90 10",
-        "Tavakoli.Vip90 11",
-        "Tavakoli.Vip90 12",
-        "Tavakoli.Vip90 13",
-        "Tavakoli.Vip90 14",
-        "Tavakoli.Vip90 15",
-        "Tavakoli.Vip90 16",
-        "Tavakoli.Vip90 17",
-        "Tavakoli.Vip90 18",
-        "Tavakoli.Vip90 19",
-        "سرورها در حال به روز رسانی",
-        "Tavakoli.Vip90 20",
-        "Tavakoli.Vip90 21",
-        "Tavakoli.Vip90 22",
-        "Tavakoli.Vip90 23",
-        "Tavakoli.Vip90 24",
-        "Tavakoli.Vip90 25"
+        "tavuser003",
+        "tavuser003 2",
+        "tavuser003 3",
+        "tavuser04",
+        "tavuser04 2",
+        "tavuser003 4",
+        "vless 4",
+        "vLess-TCP-turbo 2",
+        "tavuser001",
+        "tavuser001 2",
+        "tavuser001 3",
+        "tavuser001 4",
+        "tavuser001 5",
+        "tavuser002",
+        "tavuser002 2"
       ],
       "url": "https://detectportal.firefox.com/success.txt",
       "interval": "1m0s"
     },
     {
+      "tag": "vMess",
+      "type": "vmess",
+      "server": "mside2.easytome.net",
+      "server_port": 17913,
+      "uuid": "240e2f96-0fb0-4e7b-ad18-edb86bfea5aa",
+      "security": "auto",
+      "alter_id": 0,
+      "global_padding": false,
+      "authenticated_length": true,
+      "multiplex": {
+        "enabled": false,
+        "protocol": "smux",
+        "max_streams": 32
+      },
+      "domain_strategy": "ipv4_only"
+    },
+    {
       "tag": "vless",
+      "type": "vless",
+      "server": "vsro.pgafan.net",
+      "server_port": 35247,
+      "uuid": "83a760ae-7640-4a64-bca3-e00ec178df44",
+      "flow": "",
+      "packet_encoding": "xudp",
+      "multiplex": {
+        "enabled": false,
+        "protocol": "smux",
+        "max_streams": 32
+      },
+      "tls": {
+        "enabled": true,
+        "server_name": "vsro.pgafan.net",
+        "insecure": true,
+        "disable_sni": false
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/",
+        "headers": {
+          "Host": null
+        },
+        "max_early_data": 0,
+        "early_data_header_name": "Sec-WebSocket-Protocol"
+      },
+      "domain_strategy": "ipv4_only"
+    },
+    {
+      "tag": "vless 2",
+      "type": "vless",
+      "server": "msfi.easytome.net",
+      "server_port": 35247,
+      "uuid": "2b7390ae-767a-46da-9df9-0c88919e9b55",
+      "flow": "",
+      "packet_encoding": "xudp",
+      "multiplex": {
+        "enabled": false,
+        "protocol": "smux",
+        "max_streams": 32
+      },
+      "tls": {
+        "enabled": true,
+        "server_name": "msfi.easytome.net",
+        "insecure": true,
+        "disable_sni": false
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/",
+        "headers": {
+          "Host": null
+        },
+        "max_early_data": 0,
+        "early_data_header_name": "Sec-WebSocket-Protocol"
+      },
+      "domain_strategy": "ipv4_only"
+    },
+    {
+      "tag": "vless 3",
+      "type": "vless",
+      "server": "msus.easytome.net",
+      "server_port": 35911,
+      "uuid": "5621b36b-91ed-4a0e-92f9-8204a50cec7a",
+      "flow": "",
+      "packet_encoding": "xudp",
+      "multiplex": {
+        "enabled": false,
+        "protocol": "smux",
+        "max_streams": 32
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/",
+        "headers": {
+          "Host": null
+        },
+        "max_early_data": 0,
+        "early_data_header_name": "Sec-WebSocket-Protocol"
+      },
+      "domain_strategy": "ipv4_only"
+    },
+    {
+      "tag": "vLess-TCP-turbo",
+      "type": "vless",
+      "server": "mside3.easytome.net",
+      "server_port": 8080,
+      "uuid": "30c1f908-acfc-42df-8aac-01c1e9b9f372",
+      "flow": "",
+      "packet_encoding": "xudp",
+      "multiplex": {
+        "enabled": false,
+        "protocol": "smux",
+        "max_streams": 32
+      },
+      "domain_strategy": "ipv4_only"
+    },
+    {
+      "tag": "tavuser003",
+      "type": "vless",
+      "server": "msfi.easytome.net",
+      "server_port": 19210,
+      "uuid": "D7C12697-B2EF-8D2E-A066-E063EE567D5F",
+      "flow": "",
+      "packet_encoding": "xudp",
+      "multiplex": {
+        "enabled": false,
+        "protocol": "smux",
+        "max_streams": 32
+      },
+      "tls": {
+        "enabled": true,
+        "server_name": "msfi.easytome.net",
+        "insecure": true,
+        "disable_sni": false
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/",
+        "headers": {
+          "Host": null
+        },
+        "max_early_data": 0,
+        "early_data_header_name": "Sec-WebSocket-Protocol"
+      },
+      "domain_strategy": "ipv4_only"
+    },
+    {
+      "tag": "tavuser003 2",
+      "type": "vless",
+      "server": "mside2.easytome.net",
+      "server_port": 11875,
+      "uuid": "7AE35DCB-B538-6643-53CF-A6ECCDA887B1",
+      "flow": "",
+      "packet_encoding": "xudp",
+      "multiplex": {
+        "enabled": false,
+        "protocol": "smux",
+        "max_streams": 32
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/",
+        "headers": {
+          "Host": null
+        },
+        "max_early_data": 0,
+        "early_data_header_name": "Sec-WebSocket-Protocol"
+      },
+      "domain_strategy": "ipv4_only"
+    },
+    {
+      "tag": "tavuser003 3",
+      "type": "vless",
+      "server": "msirui.easytome.net",
+      "server_port": 56587,
+      "uuid": "742FF904-B97C-E637-EF9B-FE4470EACCB5",
+      "flow": "",
+      "packet_encoding": "xudp",
+      "multiplex": {
+        "enabled": false,
+        "protocol": "smux",
+        "max_streams": 32
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/",
+        "headers": {
+          "Host": null
+        },
+        "max_early_data": 0,
+        "early_data_header_name": "Sec-WebSocket-Protocol"
+      },
+      "domain_strategy": "ipv4_only"
+    },
+    {
+      "tag": "tavuser04",
+      "type": "vless",
+      "server": "msirui.easytome.net",
+      "server_port": 43387,
+      "uuid": "6EC1627F-8C7C-13A9-0A43-3ED44CA23243",
+      "flow": "",
+      "packet_encoding": "xudp",
+      "multiplex": {
+        "enabled": false,
+        "protocol": "smux",
+        "max_streams": 32
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/",
+        "headers": {
+          "Host": null
+        },
+        "max_early_data": 0,
+        "early_data_header_name": "Sec-WebSocket-Protocol"
+      },
+      "domain_strategy": "ipv4_only"
+    },
+    {
+      "tag": "tavuser04 2",
+      "type": "vless",
+      "server": "mside2.easytome.net",
+      "server_port": 57726,
+      "uuid": "8025E7DA-5375-3898-8B6B-C15E0890162D",
+      "flow": "",
+      "packet_encoding": "xudp",
+      "multiplex": {
+        "enabled": false,
+        "protocol": "smux",
+        "max_streams": 32
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/",
+        "headers": {
+          "Host": null
+        },
+        "max_early_data": 0,
+        "early_data_header_name": "Sec-WebSocket-Protocol"
+      },
+      "domain_strategy": "ipv4_only"
+    },
+    {
+      "tag": "tavuser003 4",
+      "type": "vmess",
+      "server": "msfi.easytome.net",
+      "server_port": 45716,
+      "uuid": "C98F50E0-7FB3-57B1-28E5-172DF1C386A5",
+      "security": "auto",
+      "alter_id": 0,
+      "global_padding": false,
+      "authenticated_length": true,
+      "multiplex": {
+        "enabled": false,
+        "protocol": "smux",
+        "max_streams": 32
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/",
+        "headers": {
+          "Host": "msfi.easytome.net"
+        },
+        "max_early_data": 0,
+        "early_data_header_name": "Sec-WebSocket-Protocol"
+      },
+      "domain_strategy": "ipv4_only"
+    },
+    {
+      "tag": "vless 4",
       "type": "vless",
       "server": "vsde2.pgafan.net",
       "server_port": 33622,
@@ -201,7 +451,7 @@
       "domain_strategy": "ipv4_only"
     },
     {
-      "tag": "vLess-TCP-turbo",
+      "tag": "vLess-TCP-turbo 2",
       "type": "vless",
       "server": "msifr.easytome.net",
       "server_port": 8080,
@@ -216,354 +466,177 @@
       "domain_strategy": "ipv4_only"
     },
     {
-      "tag": "Tavakoli.Vip90",
-      "type": "shadowsocksr",
-      "server": "nsde3.imytvps.com",
-      "server_port": 5000,
-      "method": "chacha20",
-      "password": "Jh+287UBAd@+",
-      "obfs": "http_simple",
-      "obfs_param": "",
-      "protocol": "auth_aes128_md5",
-      "protocol_param": "",
+      "tag": "tavuser001",
+      "type": "vless",
+      "server": "mside2.easytome.net",
+      "server_port": 54176,
+      "uuid": "489D5709-1E5A-E40D-B320-1560C22CAF51",
+      "flow": "",
+      "packet_encoding": "xudp",
+      "multiplex": {
+        "enabled": false,
+        "protocol": "smux",
+        "max_streams": 32
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/",
+        "headers": {
+          "Host": null
+        },
+        "max_early_data": 0,
+        "early_data_header_name": "Sec-WebSocket-Protocol"
+      },
       "domain_strategy": "ipv4_only"
     },
     {
-      "tag": "Tavakoli.Vip90 2",
-      "type": "shadowsocksr",
-      "server": "nsnl.imytvps.com",
-      "server_port": 5000,
-      "method": "salsa20",
-      "password": "$$Turb0+VN$$",
-      "obfs": "http_post",
-      "obfs_param": "",
-      "protocol": "auth_aes128_md5",
-      "protocol_param": "",
+      "tag": "tavuser001 2",
+      "type": "vless",
+      "server": "msirui.easytome.net",
+      "server_port": 10623,
+      "uuid": "0A907662-8C57-1779-264A-F42FF2E4BBD1",
+      "flow": "",
+      "packet_encoding": "xudp",
+      "multiplex": {
+        "enabled": false,
+        "protocol": "smux",
+        "max_streams": 32
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/",
+        "headers": {
+          "Host": null
+        },
+        "max_early_data": 0,
+        "early_data_header_name": "Sec-WebSocket-Protocol"
+      },
       "domain_strategy": "ipv4_only"
     },
     {
-      "tag": "Tavakoli.Vip90 3",
-      "type": "shadowsocksr",
-      "server": "nsfi.imytvps.com",
-      "server_port": 443,
-      "method": "aes-256-cfb",
-      "password": "+asd6a5s5df+",
-      "obfs": "http_post",
-      "obfs_param": "",
-      "protocol": "auth_aes128_md5",
-      "protocol_param": "",
+      "tag": "tavuser001 3",
+      "type": "vless",
+      "server": "vsde2.pgafan.net",
+      "server_port": 44251,
+      "uuid": "FA69FB91-3342-2973-3C92-A95EF7CFB477",
+      "flow": "",
+      "packet_encoding": "xudp",
+      "multiplex": {
+        "enabled": false,
+        "protocol": "smux",
+        "max_streams": 32
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/",
+        "headers": {
+          "Host": null
+        },
+        "max_early_data": 0,
+        "early_data_header_name": "Sec-WebSocket-Protocol"
+      },
       "domain_strategy": "ipv4_only"
     },
     {
-      "tag": "Tavakoli.Vip90 4",
-      "type": "shadowsocksr",
-      "server": "nsde.imytvps.com",
-      "server_port": 5000,
-      "method": "salsa20",
-      "password": "Jh+287UBAd@+",
-      "obfs": "http_post",
-      "obfs_param": "",
-      "protocol": "auth_aes128_md5",
-      "protocol_param": "",
+      "tag": "tavuser001 4",
+      "type": "vless",
+      "server": "msus.easytome.net",
+      "server_port": 21947,
+      "uuid": "084C6805-3EE5-2878-DBE9-52BFCE39E059",
+      "flow": "",
+      "packet_encoding": "xudp",
+      "multiplex": {
+        "enabled": false,
+        "protocol": "smux",
+        "max_streams": 32
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/",
+        "headers": {
+          "Host": null
+        },
+        "max_early_data": 0,
+        "early_data_header_name": "Sec-WebSocket-Protocol"
+      },
       "domain_strategy": "ipv4_only"
     },
     {
-      "tag": "Tavakoli.Vip90 5",
-      "type": "shadowsocksr",
-      "server": "51.38.89.134",
-      "server_port": 5000,
-      "method": "aes-128-cfb",
-      "password": "+TUR807PN++",
-      "obfs": "http_simple",
-      "obfs_param": "",
-      "protocol": "auth_aes128_md5",
-      "protocol_param": "",
+      "tag": "tavuser001 5",
+      "type": "vless",
+      "server": "msfi.easytome.net",
+      "server_port": 41327,
+      "uuid": "EF24344D-4597-96B5-43C8-CA56EABE479E",
+      "flow": "",
+      "packet_encoding": "xudp",
+      "multiplex": {
+        "enabled": false,
+        "protocol": "smux",
+        "max_streams": 32
+      },
+      "tls": {
+        "enabled": true,
+        "server_name": "msfi.easytome.net",
+        "insecure": true,
+        "disable_sni": false
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/",
+        "headers": {
+          "Host": null
+        },
+        "max_early_data": 0,
+        "early_data_header_name": "Sec-WebSocket-Protocol"
+      },
       "domain_strategy": "ipv4_only"
     },
     {
-      "tag": "Tavakoli.Vip90 6",
-      "type": "shadowsocksr",
-      "server": "nsuk2.imytvps.com",
-      "server_port": 5000,
-      "method": "chacha20",
-      "password": "+TuRB0V9N++",
-      "obfs": "http_simple",
-      "obfs_param": "",
-      "protocol": "auth_aes128_md5",
-      "protocol_param": "",
+      "tag": "tavuser002",
+      "type": "vless",
+      "server": "mside2.easytome.net",
+      "server_port": 56317,
+      "uuid": "128550ED-9DEC-2827-538F-D5AE5C5C6DEC",
+      "flow": "",
+      "packet_encoding": "xudp",
+      "multiplex": {
+        "enabled": false,
+        "protocol": "smux",
+        "max_streams": 32
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/",
+        "headers": {
+          "Host": null
+        },
+        "max_early_data": 0,
+        "early_data_header_name": "Sec-WebSocket-Protocol"
+      },
       "domain_strategy": "ipv4_only"
     },
     {
-      "tag": "Tavakoli.Vip90 7",
-      "type": "shadowsocksr",
-      "server": "sstr.imytvps.com",
-      "server_port": 443,
-      "method": "aes-128-cfb",
-      "password": "+asd6a5s5df+",
-      "obfs": "http_post",
-      "obfs_param": "",
-      "protocol": "auth_aes128_md5",
-      "protocol_param": "",
-      "domain_strategy": "ipv4_only"
-    },
-    {
-      "tag": "Tavakoli.Vip89",
-      "type": "shadowsocksr",
-      "server": "nsus.imytvps.com",
-      "server_port": 5000,
-      "method": "chacha20",
-      "password": "$$Turb0++VPN$$",
-      "obfs": "http_simple",
-      "obfs_param": "",
-      "protocol": "auth_aes128_md5",
-      "protocol_param": "",
-      "domain_strategy": "ipv4_only"
-    },
-    {
-      "tag": "Tavakoli.Vip90 8",
-      "type": "shadowsocksr",
-      "server": "ssca.imytvps.com",
-      "server_port": 443,
-      "method": "aes-128-cfb",
-      "password": "$$Turb0VPN$$",
-      "obfs": "http_post",
-      "obfs_param": "",
-      "protocol": "auth_aes128_md5",
-      "protocol_param": "",
-      "domain_strategy": "ipv4_only"
-    },
-    {
-      "tag": "Tavakoli.Vip90 9",
-      "type": "shadowsocksr",
-      "server": "nsus6.imytvps.com",
-      "server_port": 5000,
-      "method": "salsa20",
-      "password": "+asd6a5s5df+",
-      "obfs": "http_post",
-      "obfs_param": "",
-      "protocol": "auth_aes128_md5",
-      "protocol_param": "",
-      "domain_strategy": "ipv4_only"
-    },
-    {
-      "tag": "Tavakoli.Vip90 10",
-      "type": "shadowsocksr",
-      "server": "nsus5.imytvps.com",
-      "server_port": 5000,
-      "method": "chacha20",
-      "password": "BVga$@jah+",
-      "obfs": "http_simple",
-      "obfs_param": "",
-      "protocol": "auth_aes128_md5",
-      "protocol_param": "",
-      "domain_strategy": "ipv4_only"
-    },
-    {
-      "tag": "Tavakoli.Vip90 11",
-      "type": "shadowsocksr",
-      "server": "nsde2.imytvps.com",
-      "server_port": 443,
-      "method": "chacha20",
-      "password": "+asd6a5s5df+",
-      "obfs": "http_simple",
-      "obfs_param": "",
-      "protocol": "auth_aes128_md5",
-      "protocol_param": "",
-      "domain_strategy": "ipv4_only"
-    },
-    {
-      "tag": "Tavakoli.Vip90 12",
-      "type": "shadowsocksr",
-      "server": "nstr2.imytvps.com",
-      "server_port": 5000,
-      "method": "chacha20",
-      "password": "JHs65%$hasd",
-      "obfs": "http_simple",
-      "obfs_param": "",
-      "protocol": "auth_aes128_md5",
-      "protocol_param": "",
-      "domain_strategy": "ipv4_only"
-    },
-    {
-      "tag": "Tavakoli.Vip90 13",
-      "type": "shadowsocksr",
-      "server": "nstr2.imytvps.com",
-      "server_port": 443,
-      "method": "aes-256-cfb",
-      "password": "JHs65%$hasd",
-      "obfs": "http_post",
-      "obfs_param": "",
-      "protocol": "auth_aes128_md5",
-      "protocol_param": "",
-      "domain_strategy": "ipv4_only"
-    },
-    {
-      "tag": "Tavakoli.Vip90 14",
-      "type": "shadowsocksr",
-      "server": "nsus3.imytvps.com",
-      "server_port": 443,
-      "method": "aes-128-cfb",
-      "password": "+asd6a5s5df+",
-      "obfs": "http_post",
-      "obfs_param": "",
-      "protocol": "auth_aes128_md5",
-      "protocol_param": "",
-      "domain_strategy": "ipv4_only"
-    },
-    {
-      "tag": "Tavakoli.Vip90 15",
-      "type": "shadowsocksr",
-      "server": "nsus3.imytvps.com",
-      "server_port": 443,
-      "method": "aes-128-cfb",
-      "password": "+asd6a5s5df+",
-      "obfs": "http_post",
-      "obfs_param": "",
-      "protocol": "auth_aes128_md5",
-      "protocol_param": "",
-      "domain_strategy": "ipv4_only"
-    },
-    {
-      "tag": "Tavakoli.Vip90 16",
-      "type": "shadowsocksr",
-      "server": "nsus4.imytvps.com",
-      "server_port": 5000,
-      "method": "chacha20",
-      "password": "+asd6a5s5df+",
-      "obfs": "http_simple",
-      "obfs_param": "",
-      "protocol": "auth_aes128_md5",
-      "protocol_param": "",
-      "domain_strategy": "ipv4_only"
-    },
-    {
-      "tag": "Tavakoli.Vip90 17",
-      "type": "shadowsocksr",
-      "server": "nsus2.imytvps.com",
-      "server_port": 5000,
-      "method": "chacha20",
-      "password": "TuRB0V9N++",
-      "obfs": "http_simple",
-      "obfs_param": "",
-      "protocol": "auth_aes128_md5",
-      "protocol_param": "",
-      "domain_strategy": "ipv4_only"
-    },
-    {
-      "tag": "Tavakoli.Vip90 18",
-      "type": "shadowsocksr",
-      "server": "nsru.imytvps.com",
-      "server_port": 5000,
-      "method": "chacha20",
-      "password": "^$%jdvTF54#",
-      "obfs": "http_simple",
-      "obfs_param": "",
-      "protocol": "auth_aes128_md5",
-      "protocol_param": "",
-      "domain_strategy": "ipv4_only"
-    },
-    {
-      "tag": "Tavakoli.Vip90 19",
-      "type": "shadowsocksr",
-      "server": "nsuk.imytvps.com",
-      "server_port": 5000,
-      "method": "aes-128-cfb",
-      "password": "$$Turb0VPN+$$",
-      "obfs": "http_simple",
-      "obfs_param": "",
-      "protocol": "auth_aes128_md5",
-      "protocol_param": "",
-      "domain_strategy": "ipv4_only"
-    },
-    {
-      "tag": "سرورها در حال به روز رسانی",
-      "type": "shadowsocksr",
-      "server": "mci.ir",
-      "server_port": 5000,
-      "method": "none",
-      "password": "$$Turb0VPN+$$",
-      "obfs": "plain",
-      "obfs_param": "",
-      "protocol": "origin",
-      "protocol_param": "",
-      "domain_strategy": "ipv4_only"
-    },
-    {
-      "tag": "Tavakoli.Vip90 20",
-      "type": "shadowsocksr",
-      "server": "nsuk3.imytvps.com",
-      "server_port": 443,
-      "method": "aes-128-cfb",
-      "password": "5FYhn96@+Kj",
-      "obfs": "http_post",
-      "obfs_param": "",
-      "protocol": "auth_aes128_md5",
-      "protocol_param": "",
-      "domain_strategy": "ipv4_only"
-    },
-    {
-      "tag": "Tavakoli.Vip90 21",
-      "type": "shadowsocksr",
-      "server": "nsnl5.imytvps.com",
-      "server_port": 5000,
-      "method": "salsa20",
-      "password": "$$Turb0+VN$$",
-      "obfs": "http_post",
-      "obfs_param": "",
-      "protocol": "auth_aes128_md5",
-      "protocol_param": "",
-      "domain_strategy": "ipv4_only"
-    },
-    {
-      "tag": "Tavakoli.Vip90 22",
-      "type": "shadowsocksr",
-      "server": "nsnl2.imytvps.com",
-      "server_port": 5000,
-      "method": "chacha20",
-      "password": "JH52ht21+#sad",
-      "obfs": "http_simple",
-      "obfs_param": "",
-      "protocol": "auth_aes128_md5",
-      "protocol_param": "",
-      "domain_strategy": "ipv4_only"
-    },
-    {
-      "tag": "Tavakoli.Vip90 23",
-      "type": "shadowsocksr",
-      "server": "nsnl2.imytvps.com",
-      "server_port": 5000,
-      "method": "aes-128-cfb",
-      "password": "JH52ht21+#sad",
-      "obfs": "http_post",
-      "obfs_param": "",
-      "protocol": "auth_aes128_md5",
-      "protocol_param": "",
-      "domain_strategy": "ipv4_only"
-    },
-    {
-      "tag": "Tavakoli.Vip90 24",
-      "type": "shadowsocksr",
-      "server": "nsnl3.imytvps.com",
-      "server_port": 5000,
-      "method": "salsa20",
-      "password": "KhTvf+@j5s4+",
-      "obfs": "http_post",
-      "obfs_param": "",
-      "protocol": "auth_aes128_md5",
-      "protocol_param": "",
-      "domain_strategy": "ipv4_only"
-    },
-    {
-      "tag": "Tavakoli.Vip90 25",
-      "type": "shadowsocksr",
-      "server": "nsfr.imytvps.com",
-      "server_port": 5000,
-      "method": "aes-128-cfb",
-      "password": "+TUR807PN++",
-      "obfs": "http_post",
-      "obfs_param": "",
-      "protocol": "auth_aes128_md5",
-      "protocol_param": "",
+      "tag": "tavuser002 2",
+      "type": "vless",
+      "server": "msirui.easytome.net",
+      "server_port": 15303,
+      "uuid": "56430012-E1DF-2298-41C8-A8F183E7452F",
+      "flow": "",
+      "packet_encoding": "xudp",
+      "multiplex": {
+        "enabled": false,
+        "protocol": "smux",
+        "max_streams": 32
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/",
+        "headers": {
+          "Host": null
+        },
+        "max_early_data": 0,
+        "early_data_header_name": "Sec-WebSocket-Protocol"
+      },
       "domain_strategy": "ipv4_only"
     },
     {
