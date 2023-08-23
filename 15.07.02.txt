@@ -33,9 +33,6 @@ proxy-groups:
     proxies:
       - ok_1
       - ok_2
-      - ok_3
-      - ok_4
-      - ok_5
  
 rules:
   - DOMAIN-SUFFIX,mci.ir,DIRECT
