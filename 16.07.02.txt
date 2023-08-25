@@ -22,15 +22,12 @@ dns:
     - tls://dns.google:853
 
 proxies:
-  - {"name":"Vip_1","type":"vless","server":"mside3.easytome.net","port":8080,"uuid":"30c1f908-acfc-42df-8aac-01c1e9b9f372","tls":false,"servername":"telewebion.com","network":"tcp"}
-  - {"name":"Vip_2","type":"vless","server":"msifr.easytome.net","port":8080,"uuid":"8c1dc180-7988-47fd-9228-69af197fd18f","tls":false,"servername":"telewebion.com","network":"tcp"}
-  - {"name":"Vip_3","type":"vless","server":"vsde2.pgafan.net","port":33622,"uuid":"f498014d-0135-4626-c259-c48d9b628a67","tls":false,"network":"ws","ws-opts":{"path":"/"}}
-  - {"name":"Vip_4","type":"ssr","server":"nsfr3.irundns.net","port":5000,"password":"+TUR807PN++","cipher":"dummy","obfs":"http_simple","protocol":"auth_aes128_md5","group":"FreeSSR-public"}
-  - {"name":"Vip_5","type":"ssr","server":"nsnl.irundns.net","port":5000,"password":"$$Turb0+VN$$","cipher":"dummy","obfs":"http_post","protocol":"auth_aes128_md5","group":"FreeSSR-public"}
-  - {"name":"Vip_6","type":"ssr","server":"nsuk2.irundns.net","port":5000,"password":"+TuRB0V9N++","cipher":"dummy","obfs":"http_simple","protocol":"auth_aes128_md5","group":"FreeSSR-public"}
-  - {"name":"Vip_7","type":"ssr","server":"nsfr2.irundns.net","port":5000,"password":"+TUR807PN++","cipher":"dummy","obfs":"http_simple","protocol":"auth_aes128_md5","group":"FreeSSR-public"}
-  - {"name":"Vip_8","type":"ssr","server":"nsus.irundns.net","port":5000,"password":"$$Turb0++VPN$$","cipher":"dummy","obfs":"http_simple","protocol":"auth_aes128_md5","group":"FreeSSR-public"}
-  - {"name":"Vip_9","type":"ssr","server":"ssca.irundns.net","port":443,"password":"$$Turb0VPN$$","cipher":"aes-128-cfb","obfs":"http_post","protocol":"auth_aes128_md5","group":"FreeSSR-public"}
+  - {name: Vip_1, server: nsfr3.irundns.net, port: 5000, type: ssr, cipher: chacha20, password: +TUR807PN++, protocol: auth_aes128_md5, obfs: http_simple, protocol-param: "", obfs-param: ""}
+  - {name: Vip_2, server: nsnl.irundns.net, port: 5000, type: ssr, cipher: salsa20, password: $$Turb0+VN$$, protocol: auth_aes128_md5, obfs: http_post, protocol-param: "", obfs-param: ""}
+  - {name: Vip_3, server: nsuk2.irundns.net, port: 5000, type: ssr, cipher: chacha20, password: +TuRB0V9N++, protocol: auth_aes128_md5, obfs: http_simple, protocol-param: "", obfs-param: ""}
+  - {name: Vip_4, server: nsfr3.irundns.net, port: 5000, type: ssr, cipher: chacha20, password: +TUR807PN++, protocol: auth_aes128_md5, obfs: http_simple, protocol-param: "", obfs-param: ""}
+  - {name: Vip_5, server: nsus.irundns.net, port: 5000, type: ssr, cipher: chacha20, password: $$Turb0++VPN$$, protocol: auth_aes128_md5, obfs: http_simple, protocol-param: "", obfs-param: ""}
+  - {name: Vip_6, server: ssca.irundns.net, port: 443, type: ssr, cipher: aes-128-cfb, password: $$Turb0VPN$$, protocol: auth_aes128_md5, obfs: http_post, protocol-param: "", obfs-param: ""}
 proxy-groups:
   - name: Zigma
     type: url-test
@@ -44,9 +41,6 @@ proxy-groups:
       - Vip_4
       - Vip_5
       - Vip_6
-      - Vip_7
-      - Vip_8
-      - Vip_9
  
 rules:
   - DOMAIN-SUFFIX,mci.ir,DIRECT
