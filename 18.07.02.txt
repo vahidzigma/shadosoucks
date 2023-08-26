@@ -22,12 +22,17 @@ dns:
     - tls://dns.google:853
 
 proxies:
-  - {name: Vip_1, server: nsfr3.irundns.net, port: 5000, type: ssr, cipher: chacha20, password: +TUR807PN++, protocol: auth_aes128_md5, obfs: http_simple, protocol-param: "", obfs-param: ""}
-  - {name: Vip_2, server: nsnl.irundns.net, port: 5000, type: ssr, cipher: salsa20, password: $$Turb0+VN$$, protocol: auth_aes128_md5, obfs: http_post, protocol-param: "", obfs-param: ""}
-  - {name: Vip_3, server: nsuk2.irundns.net, port: 5000, type: ssr, cipher: chacha20, password: +TuRB0V9N++, protocol: auth_aes128_md5, obfs: http_simple, protocol-param: "", obfs-param: ""}
-  - {name: Vip_4, server: nsfr3.irundns.net, port: 5000, type: ssr, cipher: chacha20, password: +TUR807PN++, protocol: auth_aes128_md5, obfs: http_simple, protocol-param: "", obfs-param: ""}
-  - {name: Vip_5, server: nsus.irundns.net, port: 5000, type: ssr, cipher: chacha20, password: $$Turb0++VPN$$, protocol: auth_aes128_md5, obfs: http_simple, protocol-param: "", obfs-param: ""}
-  - {name: Vip_6, server: ssca.irundns.net, port: 443, type: ssr, cipher: aes-128-cfb, password: $$Turb0VPN$$, protocol: auth_aes128_md5, obfs: http_post, protocol-param: "", obfs-param: ""}
+  - {"name":"Best_1","type":"vless","server":"msirui.easytome.net","port":43387,"uuid":"6EC1627F-8C7C-13A9-0A43-3ED44CA23243","tls":false,"network":"ws","ws-opts":{"path":"/"}}
+  - {"name":"Best_2","type":"vmess","server":"msifr.easytome.net","port":80,"cipher":"auto","uuid":"7D6D9E43-581E-E07E-011F-8B453B719812","alterId":0,"tls":false,"skip-cert-verify":true,"network":"http"}
+  - {"name":"Best_3","type":"vmess","server":"mside3.easytome.net","port":80,"cipher":"auto","uuid":"138C943B-AE87-79D2-49C8-FB9C0A5284EC","alterId":0,"tls":false,"skip-cert-verify":true,"network":"http"}
+  - {"name":"Best_4","type":"vless","server":"msuae.easytome.net","port":443,"uuid":"CB1C2B32-9EE7-B397-E61C-C02700D030B7","tls":true}
+  - {"name":"Best_5","type":"vmess","server":"mside3.easytome.net","port":80,"cipher":"auto","uuid":"14C4CB41-B255-5EA5-CB56-524739F5FC72","alterId":0,"tls":false,"skip-cert-verify":true,"network":"http"}
+  - {"name":"Best_6","type":"vless","server":"msuae.easytome.net","port":443,"uuid":"404D76AF-E42A-D629-C171-D69D4EC7F720","tls":true}
+  - {"name":"Best_7","type":"vless","server":"msuae.easytome.net","port":443,"uuid":"E6F841A6-2078-E87D-9878-88C547F5949D","tls":true}
+  - {"name":"Best_8","type":"vless","server":"msuae.easytome.net","port":443,"uuid":"8F36A24E-2E6A-E1DC-609B-AB83B0552DAC","tls":true}
+  - {"name":"Best_9","type":"vmess","server":"mside3.easytome.net","port":80,"cipher":"auto","uuid":"04029A7D-E029-EDD1-4741-79C290D0287F","alterId":0,"tls":false,"skip-cert-verify":true,"network":"http"}
+  - {"name":"Best_10","type":"vless","server":"mside3.easytome.net","port":8080,"uuid":"30c1f908-acfc-42df-8aac-01c1e9b9f372","tls":false}
+  - {"name":"Best_11","type":"vless","server":"msifr.easytome.net","port":8080,"uuid":"8c1dc180-7988-47fd-9228-69af197fd18f","tls":false}
 proxy-groups:
   - name: Zigma
     type: url-test
@@ -35,12 +40,17 @@ proxy-groups:
     interval: 300
     tolerance: 50
     proxies:
-      - Vip_1
-      - Vip_2
-      - Vip_3
-      - Vip_4
-      - Vip_5
-      - Vip_6
+      - Best_1
+      - Best_2
+      - Best_3
+      - Best_4
+      - Best_5
+      - Best_6
+      - Best_7
+      - Best_8
+      - Best_9
+      - Best_10
+      - Best_11
  
 rules:
   - DOMAIN-SUFFIX,mci.ir,DIRECT
