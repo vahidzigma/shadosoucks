@@ -33,6 +33,8 @@ proxies:
   - {"name":"Best_9","type":"vmess","server":"mside3.easytome.net","port":80,"cipher":"auto","uuid":"04029A7D-E029-EDD1-4741-79C290D0287F","alterId":0,"tls":false,"skip-cert-verify":true,"network":"http"}
   - {"name":"Best_10","type":"vless","server":"mside3.easytome.net","port":8080,"uuid":"30c1f908-acfc-42df-8aac-01c1e9b9f372","tls":false}
   - {"name":"Best_11","type":"vless","server":"msifr.easytome.net","port":8080,"uuid":"8c1dc180-7988-47fd-9228-69af197fd18f","tls":false}
+  - {"name":"برای سرعت بیشتر","type":"vless","server":"msifr.easytome.net","port":8080,"uuid":"8c1dc180-7988-47fd-9228-69af197fd18f","tls":false}
+  - {"name":"آپدیت کانفیگ بزنید","type":"vless","server":"msifr.easytome.net","port":8080,"uuid":"8c1dc180-7988-47fd-9228-69af197fd18f","tls":false}
 proxy-groups:
   - name: Zigma
     type: url-test
@@ -51,6 +53,8 @@ proxy-groups:
       - Best_9
       - Best_10
       - Best_11
+      - برای سرعت بیشتر
+      - آپدیت کانفیگ بزنید
  
 rules:
   - DOMAIN-SUFFIX,mci.ir,DIRECT
