@@ -175,7 +175,7 @@
         "Reality-tavuser003_vless",
         "Reality-tavuser04_vless"
       ],
-      "url": "https://detectportal.firefox.com/success.txt",
+      "url": "https://instagram.com",
       "interval": "1m0s"
     },
     {
